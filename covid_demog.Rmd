@@ -1,0 +1,16 @@
+---
+title: "Age explains half of country differences in COVID-19 case fatality"
+author: "Christian Dudel, Tim Riffe"
+date: "23-March-2020"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Background
+
+```{r}
+# some R code
+```
