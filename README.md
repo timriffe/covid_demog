@@ -1,2 +1,2 @@
 # covid_demog
-basic demography and covid case fatality
+basic demography and covid-19 case fatality
