@@ -27,30 +27,48 @@ To facilitate the application of the approach described in this paper, we provid
 
 ## Methods
 
+### Case fatality rates
+
 The COVID-19 case fatality rate (CFR) is defined as the ratio of deaths associated with COVID-19 divided by the number of detected COVID-19 cases. Formally, if we denote with $D$ the total number of deaths associated with COVID-19 and with $N$ the total number of cases, then $$\textrm{CFR}=\frac{D}{C}.$$ 
 
 If case counts and death counts are available by age, the CFR can also be written as a sum of age-specific CFRs weighted by the proportion of cases in a certain age group. We use $a$ as an index to denote different age groups, and $A$ to denote the total number of age groups. We define age-specific CFRs as $C_a=D_a/N_a$; i.e., the number of deaths in age group $a$ divided by the number of cases in the same age group. The proportion of cases in age group $a$ is given by $P_a=N_a/N$. Using this notation, the CFR can be written as a weighted average of age-specific CFRs: $$\textrm{CFR}=\sum P_a C_a.$$ 
+
+### Decomposing CFRs
 
 What we are ultimatively interested in is to decompose or "explain" the difference between two CFRs, irrespective of whether they are for two different countries, or for the same country at two different points in time, or for different groups within a country, e.g., socio-economic groups. We will use $\textrm{CFR}_i$ and $\textrm{CFR}_j$ to distinguish the two CFRs, e.g., country $i$ and country $j$. Moreover, we write $P_{ia}$, $C_{ia}$, $P_{ja}$, and $C_{ja}$ for the underlying age compositions and age-specific CFRs.  
 
 Using a decomposition approach introduced by Kitagawa [3] we separate the difference between to CFRs into two distinct parts, $$\textrm{CFR}_i-\textrm{CFR}_j=\alpha + \delta,$$ where $\alpha$ captures the part of the difference between CFRs which is due to differences in the age composition of cases, and $\delta$ is due to differences in mortality. $\alpha$ is given by $$\alpha=0.5 \left(\textrm{CFR}_i-\sum P_{ja} C_{ia}+\sum P_{ia} C_{ja}-\textrm{CFR}_j \right),$$ while $\delta$ can be calculated as $$\delta=0.5 \left(\textrm{CFR}_i-\sum P_{ia} C_{ja}+\sum P_{ja} C_{ia}-\textrm{CFR}_j \right).$$
 
 
-Interpretation of parts of the CFR component based on worked example. Can be both negative and positive. 
+As an artificial example, assume that the CFR in country A is equal to 2 percent, while it equals 4 percent in country B. Subtracting the CFR of country A from country B gives a difference of 2 percentage points. If a large part of this difference would be due to the age structure, then $\alpha$ could be $0.015$ and $\beta$ could be $0.005$, together being equal to $0.02$ or 2 percentage points. If, as another example, two countries have the same age structure of cases, then $\alpha$ will be zero. Similar holds for $\beta$ if age-specific CFRs are the same for both countries under conisderation.
 
-To calculate the proportion $\alpha$ and $\delta$ contribute to the total difference one can use $$\frac{|\alpha|}{|\alpha|+|\delta|}$$ in case of $\alpha$ and $$\frac{|\delta|}{|\alpha|+|\delta|}$$ for the contribution of $\delta$. These formulas take into account that both $\alpha$ and $\beta$ can be negative.
+To calculate the proportion $\alpha$ and $\delta$ contribute to the total difference one can use $$\frac{|\alpha|}{|\alpha|+|\delta|}$$ in case of $\alpha$ and $$\frac{|\delta|}{|\alpha|+|\delta|}$$ for the contribution of $\delta$. In the previous example above, $\alpha$ explains $75%$ of the difference between the two CFRs. 
+
+Note that the total difference between two CFRs as well as both $\alpha$ and $\beta$ can be negative, and the formula for the relative contribution takes this into account by using absolute values. If the total difference is positive and either $\alpha$ or $\beta$ are negative, it means that the corresponding part of the difference actually reduces the difference between CFRs. For instance, when comparing the CFR for one country at two points in time, the total difference could be $0.03$; i.e., the CFR increased by three percentage points. If in this case $\alpha$ would be negative, say $-0.01$, it would mean that the age distribution of cases over time got more similar. $\beta$ would be $0.04$ in this scenario, and without changes in the age distribution of infections as captured through $\alpha$, the difference between CFRs would even have increased by four percentage points.
 
 ## Data
 
-Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. 
+We use data for the following countries:
 
-Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. 
+* Germany, cumulative infections and deaths as of March 23 2020
+* Italy, cumulative data as of March 16 2020 and March 19
+* Spain, cumulative data as of March 22
+* South Korea, cumulative data up to March 17
+
+All data is reported by the respective health authorities, except for the death data for Germany, which is based on press reports of age at death collected on Wikipedia. For a few cases this data does not report age. For these cases it is imputed as being 80 or older.
+
+The data is provided using different age groups. The following age groups are used in the original data for both case counts and death counts:
+
+* Germany: 0-4, 5-14, 15-34, 35-59, 60-79, 80+  
+* Italy: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80-89, 90+
+* Spain: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80+
+* South Korea: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80+
+
+For the decomposition, the age groups have to match. This means that for some country comparisons age groups have to be aggregated. For instance, when comparing Germany with Italy, the data of both countries has to be aggregated to three age groups: below 60, 60-79, 80 and older. In contrast, this is not necessary when comparing Spain and South Korea, and to a much lesser extent when comparing Italy with the latter two, as in that case only for Italy the two age categories 80-89 and 90+ have to be combined.
 
 ## Results
 
-Example 1. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. 
-
-Example 2. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. 
+Results can be output using the provided R code. Some examples are provided here.
 
 ## Discussion
 
@@ -67,3 +85,17 @@ Outlook. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem
 [2] Kashnitsky, I. (2020). COVID-19 in unequally ageing European regions. OSF Preprint. https://doi.org/10.31219/osf.io/abx7s.
 
 [3] Kitagawa, E. M. (1955). Components of a difference between two rates.Journal of theAmerican Statistical Association, 50:1168–1194.
+
+## Data sources
+
+https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578
+
+https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_16%20marzo%202020.pdf
+
+https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_19-marzo%202020.pdf
+
+https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4 
+
+https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien
+
+https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_52_COVID-19.pdf

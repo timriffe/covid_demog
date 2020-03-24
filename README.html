@@ -200,17 +200,39 @@ summary {
 </div>
 <div id="methods" class="section level2">
 <h2>Methods</h2>
+<div id="case-fatality-rates" class="section level3">
+<h3>Case fatality rates</h3>
 <p>The COVID-19 case fatality rate (CFR) is defined as the ratio of deaths associated with COVID-19 divided by the number of detected COVID-19 cases. Formally, if we denote with <span class="math inline">\(D\)</span> the total number of deaths associated with COVID-19 and with <span class="math inline">\(N\)</span> the total number of cases, then <span class="math display">\[\textrm{CFR}=\frac{D}{C}.\]</span></p>
 <p>If case counts and death counts are available by age, the CFR can also be written as a sum of age-specific CFRs weighted by the proportion of cases in a certain age group. We use <span class="math inline">\(a\)</span> as an index to denote different age groups, and <span class="math inline">\(A\)</span> to denote the total number of age groups. We define age-specific CFRs as <span class="math inline">\(C_a=D_a/N_a\)</span>; i.e., the number of deaths in age group <span class="math inline">\(a\)</span> divided by the number of cases in the same age group. The proportion of cases in age group <span class="math inline">\(a\)</span> is given by <span class="math inline">\(P_a=N_a/N\)</span>. Using this notation, the CFR can be written as a weighted average of age-specific CFRs: <span class="math display">\[\textrm{CFR}=\sum P_a C_a.\]</span></p>
+</div>
+<div id="decomposing-cfrs" class="section level3">
+<h3>Decomposing CFRs</h3>
 <p>What we are ultimatively interested in is to decompose or “explain” the difference between two CFRs, irrespective of whether they are for two different countries, or for the same country at two different points in time, or for different groups within a country, e.g., socio-economic groups. We will use <span class="math inline">\(\textrm{CFR}_i\)</span> and <span class="math inline">\(\textrm{CFR}_j\)</span> to distinguish the two CFRs, e.g., country <span class="math inline">\(i\)</span> and country <span class="math inline">\(j\)</span>. Moreover, we write <span class="math inline">\(P_{ia}\)</span>, <span class="math inline">\(C_{ia}\)</span>, <span class="math inline">\(P_{ja}\)</span>, and <span class="math inline">\(C_{ja}\)</span> for the underlying age compositions and age-specific CFRs.</p>
 <p>Using a decomposition approach introduced by Kitagawa [3] we separate the difference between to CFRs into two distinct parts, <span class="math display">\[\textrm{CFR}_i-\textrm{CFR}_j=\alpha + \delta,\]</span> where <span class="math inline">\(\alpha\)</span> captures the part of the difference between CFRs which is due to differences in the age composition of cases, and <span class="math inline">\(\delta\)</span> is due to differences in mortality. <span class="math inline">\(\alpha\)</span> is given by <span class="math display">\[\alpha=0.5 \left(\textrm{CFR}_i-\sum P_{ja} C_{ia}+\sum P_{ia} C_{ja}-\textrm{CFR}_j \right),\]</span> while <span class="math inline">\(\delta\)</span> can be calculated as <span class="math display">\[\delta=0.5 \left(\textrm{CFR}_i-\sum P_{ia} C_{ja}+\sum P_{ja} C_{ia}-\textrm{CFR}_j \right).\]</span></p>
-<p>Interpretation of parts of the CFR component based on worked example. Can be both negative and positive.</p>
-<p>To calculate the proportion <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\delta\)</span> contribute to the total difference one can use <span class="math display">\[\frac{|\alpha|}{|\alpha|+|\delta|}\]</span> in case of <span class="math inline">\(\alpha\)</span> and <span class="math display">\[\frac{|\delta|}{|\alpha|+|\delta|}\]</span> for the contribution of <span class="math inline">\(\delta\)</span>. These formulas take into account that both <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> can be negative.</p>
+<p>As an artificial example, assume that the CFR in country A is equal to 2 percent, while it equals 4 percent in country B. Subtracting the CFR of country A from country B gives a difference of 2 percentage points. If a large part of this difference would be due to the age structure, then <span class="math inline">\(\alpha\)</span> could be <span class="math inline">\(0.015\)</span> and <span class="math inline">\(\beta\)</span> could be <span class="math inline">\(0.005\)</span>, together being equal to <span class="math inline">\(0.02\)</span> or 2 percentage points. If, as another example, two countries have the same age structure of cases, then <span class="math inline">\(\alpha\)</span> will be zero. Similar holds for <span class="math inline">\(\beta\)</span> if age-specific CFRs are the same for both countries under conisderation.</p>
+<p>To calculate the proportion <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\delta\)</span> contribute to the total difference one can use <span class="math display">\[\frac{|\alpha|}{|\alpha|+|\delta|}\]</span> in case of <span class="math inline">\(\alpha\)</span> and <span class="math display">\[\frac{|\delta|}{|\alpha|+|\delta|}\]</span> for the contribution of <span class="math inline">\(\delta\)</span>. In the previous example above, <span class="math inline">\(\alpha\)</span> explains <span class="math inline">\(75%\)</span> of the difference between the two CFRs.</p>
+<p>Note that the total difference between two CFRs as well as both <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> can be negative, and the formula for the relative contribution takes this into account by using absolute values. If the total difference is positive and either <span class="math inline">\(\alpha\)</span> or <span class="math inline">\(\beta\)</span> are negative, it means that the corresponding part of the difference actually reduces the difference between CFRs. For instance, when comparing the CFR for one country at two points in time, the total difference could be <span class="math inline">\(0.03\)</span>; i.e., the CFR increased by three percentage points. If in this case <span class="math inline">\(\alpha\)</span> would be negative, say <span class="math inline">\(-0.01\)</span>, it would mean that the age distribution of cases over time got more similar. <span class="math inline">\(\beta\)</span> would be <span class="math inline">\(0.04\)</span> in this scenario, and without changes in the age distribution of infections as captured through <span class="math inline">\(\alpha\)</span>, the difference between CFRs would even have increased by four percentage points.</p>
+</div>
 </div>
 <div id="data" class="section level2">
 <h2>Data</h2>
-<p>Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset.</p>
-<p>Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset.</p>
+<p>We use data for the following countries:</p>
+<ul>
+<li>Germany, cumulative infections and deaths as of March 23 2020</li>
+<li>Italy, cumulative data as of March 16 2020 and March 19</li>
+<li>Spain, cumulative data as of March 22</li>
+<li>South Korea, cumulative data up to March 17</li>
+</ul>
+<p>All data is reported by the respective health authorities, except for the death data for Germany, which is based on press reports of age at death collected on Wikipedia. For a few cases this data does not report age. For these cases it is imputed as being 80 or older.</p>
+<p>The data is provided using different age groups. The following age groups are used in the original data for both case counts and death counts:</p>
+<ul>
+<li>Germany: 0-4, 5-14, 15-34, 35-59, 60-79, 80+<br />
+</li>
+<li>Italy: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80-89, 90+</li>
+<li>Spain: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80+</li>
+<li>South Korea: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80+</li>
+</ul>
+<p>For the decomposition, the age groups have to match. This means that for some country comparisons age groups have to be aggregated. For instance, when comparing Germany with Italy, the data of both countries has to be aggregated to three age groups: below 60, 60-79, 80 and older. In contrast, this is not necessary when comparing Spain and South Korea, and to a much lesser extent when comparing Italy with the latter two, as in that case only for Italy the two age categories 80-89 and 90+ have to be combined.</p>
 </div>
 <div id="results" class="section level2">
 <h2>Results</h2>
@@ -228,6 +250,15 @@ summary {
 <p>[1] Dowd, J., Rotondi, V., Andriano, L., Brazel, D. M., Block, P., Ding, X., Liu, Y., Mills, M. (20220). Demographic science aids in understanding the spread and fatality rates of COVID-19. OSF Preprint. <a href="https://osf.io/se6wy/?view_only=c2f00dfe3677493faa421fc2ea38e295" class="uri">https://osf.io/se6wy/?view_only=c2f00dfe3677493faa421fc2ea38e295</a></p>
 <p>[2] Kashnitsky, I. (2020). COVID-19 in unequally ageing European regions. OSF Preprint. <a href="https://doi.org/10.31219/osf.io/abx7s" class="uri">https://doi.org/10.31219/osf.io/abx7s</a>.</p>
 <p>[3] Kitagawa, E. M. (1955). Components of a difference between two rates.Journal of theAmerican Statistical Association, 50:1168–1194.</p>
+</div>
+<div id="data-sources" class="section level2">
+<h2>Data sources</h2>
+<p><a href="https://www.cdc.go.kr/board/board.es?mid=a30402000000&amp;bid=0030&amp;act=view&amp;list_no=366578" class="uri">https://www.cdc.go.kr/board/board.es?mid=a30402000000&amp;bid=0030&amp;act=view&amp;list_no=366578</a></p>
+<p><a href="https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_16%20marzo%202020.pdf">https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_16%20marzo%202020.pdf</a></p>
+<p><a href="https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_19-marzo%202020.pdf">https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_19-marzo%202020.pdf</a></p>
+<p><a href="https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4" class="uri">https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4</a></p>
+<p><a href="https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien">https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien</a></p>
+<p><a href="https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_52_COVID-19.pdf" class="uri">https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_52_COVID-19.pdf</a></p>
 </div>
 </div>
 
