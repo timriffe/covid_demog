@@ -171,11 +171,11 @@
   # Italy
   cases_IT_a  <- c(sum(cases_IT[1:6]),
                    sum(cases_IT[7:8]),
-                   cases_IT[9])
+                   sum(cases_IT[9:10]))
   
   deaths_IT_a <- c(sum(deaths_IT[1:6]),
                    sum(deaths_IT[7:8]),
-                   deaths_IT[9])
+                   sum(deaths_IT[9:10]))
   
   cfr_age_IT_a <- deaths_IT_a/cases_IT_a
   

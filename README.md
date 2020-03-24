@@ -40,11 +40,11 @@ What we are ultimatively interested in is to decompose or "explain" the differen
 Using a decomposition approach introduced by Kitagawa [3] we separate the difference between to CFRs into two distinct parts, $$\textrm{CFR}_i-\textrm{CFR}_j=\alpha + \delta,$$ where $\alpha$ captures the part of the difference between CFRs which is due to differences in the age composition of cases, and $\delta$ is due to differences in mortality. $\alpha$ is given by $$\alpha=0.5 \left(\textrm{CFR}_i-\sum P_{ja} C_{ia}+\sum P_{ia} C_{ja}-\textrm{CFR}_j \right),$$ while $\delta$ can be calculated as $$\delta=0.5 \left(\textrm{CFR}_i-\sum P_{ia} C_{ja}+\sum P_{ja} C_{ia}-\textrm{CFR}_j \right).$$
 
 
-As an artificial example, assume that the CFR in country A is equal to 2 percent, while it equals 4 percent in country B. Subtracting the CFR of country A from country B gives a difference of 2 percentage points. If a large part of this difference would be due to the age structure, then $\alpha$ could be $0.015$ and $\beta$ could be $0.005$, together being equal to $0.02$ or 2 percentage points. If, as another example, two countries have the same age structure of cases, then $\alpha$ will be zero. Similar holds for $\beta$ if age-specific CFRs are the same for both countries under conisderation.
+As an artificial example, assume that the CFR in country A is equal to 2 percent, while it equals 4 percent in country B. Subtracting the CFR of country A from country B gives a difference of 2 percentage points. If a large part of this difference would be due to the age structure, then $\alpha$ could be $0.015$ and $\delta$ could be $0.005$, together being equal to $0.02$ or 2 percentage points. If, as another example, two countries have the same age structure of cases, then $\alpha$ will be zero. Similar holds for $\delta$ if age-specific CFRs are the same for both countries under conisderation.
 
 To calculate the proportion $\alpha$ and $\delta$ contribute to the total difference one can use $$\frac{|\alpha|}{|\alpha|+|\delta|}$$ in case of $\alpha$ and $$\frac{|\delta|}{|\alpha|+|\delta|}$$ for the contribution of $\delta$. In the previous example above, $\alpha$ explains $75%$ of the difference between the two CFRs. 
 
-Note that the total difference between two CFRs as well as both $\alpha$ and $\beta$ can be negative, and the formula for the relative contribution takes this into account by using absolute values. If the total difference is positive and either $\alpha$ or $\beta$ are negative, it means that the corresponding part of the difference actually reduces the difference between CFRs. For instance, when comparing the CFR for one country at two points in time, the total difference could be $0.03$; i.e., the CFR increased by three percentage points. If in this case $\alpha$ would be negative, say $-0.01$, it would mean that the age distribution of cases over time got more similar. $\beta$ would be $0.04$ in this scenario, and without changes in the age distribution of infections as captured through $\alpha$, the difference between CFRs would even have increased by four percentage points.
+Note that the total difference between two CFRs as well as both $\alpha$ and $\delta$ can be negative, and the formula for the relative contribution takes this into account by using absolute values. If the total difference is positive and either $\alpha$ or $\delta$ are negative, it means that the corresponding part of the difference actually reduces the difference between CFRs. For instance, when comparing the CFR for one country at two points in time, the total difference could be $0.03$; i.e., the CFR increased by three percentage points. If in this case $\alpha$ would be negative, say $-0.01$, it would mean that the age distribution of cases over time got more similar. $\delta$ would be $0.04$ in this scenario, and without changes in the age distribution of infections as captured through $\alpha$, the difference between CFRs would even have increased by four percentage points.
 
 ## Data
 
@@ -70,13 +70,15 @@ For the decomposition, the age groups have to match. This means that for some co
 
 Results can be output using the provided R code. Some examples are provided here.
 
+* Germany vs Italy (March 19): The CFR for Germany is $0.4$ percent, while the CFR of Italy was around $8.6$ percent. The difference is thus around $8.2$ percentage points ($0.082$). $\alpha$ equals $0.037$ and $\delta$ amounts to $0.044$. Thus, the age component explains roughly 46% of the difference, while the mortality component explains 54% percent.
+* Italy (March 16) vs Italy (March 19): From March 16 2020 to March 19 the CFR in Italy increased by $1.8$ percentage points from $6.8$ percent to $8.6$ percent. $\alpha$ is about $-0.001$ and thus actually reducing the difference, albeit only to a small extent, while $\delta$ equals $0.019$. This means that around 92% of the change over time can be attributed to (increasing) mortality, while the age structure of cases only had a small effect but became more favorable.
+
 ## Discussion
 
-Summary. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. 
+Decomposing differences in case fatality rates over time or between countries reveals crucial insights for monitoring the spread of COVID-19. Our results, for instance, show that differences between countries with low and high CFRs can be driven by the age structure of cases to a significant extent. 
 
-Limitations. Testing. Aggregation. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset.
+There are potential limitations to the approach discussed here. Most importantly, case counts as well as death counts depend on the testing regime, and both types of counts may be affected by other issues like reporting delays [4]. This means that, for instance, if our approach indicates that a large part of a difference is due to the age structure, this might actually only reflect differences in testing. To assess to what extent this is the case requires expertise about the contexts which are being compared. Results will be, however, correct in the sense that they point reseachers to the structure of cases as causing differences; what causes the structure of cases to differ is another question not answered by our approach.
 
-Outlook. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset.
 
 ## References
 
@@ -85,6 +87,8 @@ Outlook. Lorem ipsum dolorem iset. Lorem ipsum dolorem iset. Lorem ipsum dolorem
 [2] Kashnitsky, I. (2020). COVID-19 in unequally ageing European regions. OSF Preprint. https://doi.org/10.31219/osf.io/abx7s.
 
 [3] Kitagawa, E. M. (1955). Components of a difference between two rates.Journal of theAmerican Statistical Association, 50:1168–1194.
+
+[4] Lipsitch M, Donnelly CA, Fraser C, Blake IM, Cori A, Dorigatti I, et al. (2015) Potential Biases in Estimating Absolute and Relative Case-Fatality Risks during Outbreaks. PLoS Negl Trop Dis 9(7): e0003846. https://doi.org/10.1371/journal.pntd.0003846
 
 ## Data sources
 
