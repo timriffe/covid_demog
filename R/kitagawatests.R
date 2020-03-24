@@ -85,15 +85,54 @@
     sum(age_dis*cfr_age)
     
   }
-
+  cfr2 <- function(cc,rr){
+    sum(cc * rr)
+  }
+  
+  # v1, mirrors below formulas exactly
+  kitagawa_cfr <- function(c1, r1, c2, r2){
+    c1  <- c1 / sum(c1)
+    c2  <- c2 / sum(c2)
+    
+    Tot <- cfr2(c1,r1) - cfr2(c2,r2)
+    Aa  <- 0.5 * (cfr2(c1,r1)-cfr2(c2,r1)+cfr2(c1,r2)-cfr2(c2,r2))
+    Bb  <- 0.5 * (cfr2(c1,r1)-cfr2(c1,r2)+cfr2(c2,r1)-cfr2(c2,r2))
+    list(Diff = Tot, AgeComp = Aa, RateComp = Bb)
+  }
+  # v2 simplifies the above
+  kitagawa_cfr2 <- function(c1, r1, c2, r2){
+    c1  <- c1 / sum(c1)
+    c2  <- c2 / sum(c2)
+    
+    Tot <- cfr2(c1, r1) - cfr2(c2, r2)
+    Aa  <- 0.5 * (Tot + cfr2(c1, r2) - cfr2(c2, r1))
+    Bb  <- 0.5 * (Tot + cfr2(c2, r1) - cfr2(c1, r2))
+    list(Diff = Tot, AgeComp = Aa, RateComp = Bb)
+  }
+  # v3 is one most would recognize, fewer computations too.
+  kitagawa_cfr3 <- function(c1, r1, c2, r2){
+    c1  <- c1 / sum(c1)
+    c2  <- c2 / sum(c2)
+    
+    Tot <- cfr2(c1, r1) - cfr2(c2, r2)
+    Aa  <- sum((c1 - c2) * (r1 + r2) / 2)
+    Bb  <- sum((r1 - r2) * (c1 + c2) / 2)
+    list(Diff = Tot, AgeComp = Aa, RateComp = Bb)
+  }
+  
   # Some checks: Matches with numbers on websites
   cfr(cases=cases_IT,death=deaths_IT)
   cfr(cases=cases_SK,death=deaths_SK)  
   
   cfr(cases=cases_IT,cfr_age=cfr_age_IT)
   cfr(cases=cases_SK,cfr_age=cfr_age_SK)  
+  
+  # TR: same as cfr2
+  cfr(cases=cases_IT / sum(cases_IT),cfr_age=cfr_age_IT)
+  cfr(cases=cases_SK / sum(cases_SK),cfr_age=cfr_age_SK)  
+  
 
-
+  expos <- HMDHFDplus::readHMDweb(CNTRY="USA","Exposures_1x1",us,pw)
 
 ### Decomposition Italy South Korea ####
 
@@ -104,12 +143,14 @@
   # Contribution of B/b: 0.5 * [f(A,B)-f(A,b)+f(a,B)-f(a,b)]
   
   # Combine 80-89 and 90+ to 80+ for Italy
-  cases_IT_a  <- c(cases_IT[1:8],sum(cases_IT[9:10]))
-  deaths_IT_a <- c(deaths_IT[1:8],sum(deaths_IT[9:10]))
+  cases_IT_a   <- c(cases_IT[1:8],sum(cases_IT[9:10]))
+  deaths_IT_a  <- c(deaths_IT[1:8],sum(deaths_IT[9:10]))
   cfr_age_IT_a <- deaths_IT_a/cases_IT_a
   
   
   # Total difference
+  
+  
   total_diff <- cfr(cases=cases_IT_a,cfr_age=cfr_age_IT_a)-
     cfr(cases=cases_SK,cfr_age=cfr_age_SK)  
   
@@ -124,7 +165,10 @@
                       cfr(cases=cases_IT_a,cfr_age=cfr_age_SK)+
                       cfr(cases=cases_SK,cfr_age=cfr_age_IT_a)-
                       cfr(cases=cases_SK,cfr_age=cfr_age_SK))
-  
+  total_diff; age_diff; mort_diff
+  kitagawa_cfr(cases_IT_a, cfr_age_IT_a, cases_SK, cfr_age_SK)
+  kitagawa_cfr2(cases_IT_a, cfr_age_IT_a, cases_SK, cfr_age_SK)
+  kitagawa_cfr3(cases_IT_a, cfr_age_IT_a, cases_SK, cfr_age_SK)
   # Check
   total_diff
   age_diff+mort_diff
