@@ -8,9 +8,9 @@ Max Planck Institute for Demographic Research, Rostock, Germany
 
 # Summary
 
-COVID-19 has been spreading rapidly across the world. The case fatality rates (CFRs) associated with COVID-19 outbreaks in different countries, however, vary considerably. Moreover, the CFR is often based on cumulative case counts and death counts, and thus changes over time as the disease spreads. What is driving differences between countries and changes over time in the CFR is currently not well understood. 
+COVID-19 has been spreading rapidly across the world. The case fatality rates (CFRs) associated with COVID-19 outbreaks in different countries have, however, varied significantly. Moreover, the CFR of a country can change considerably over time as the disease spreads. What is driving differences in the CFR between countries and changes over time is currently not well understood. 
 
-We use demographic decomposition methods to disentangle two potential drivers of differences and trends: (1) the age structure of cases and (2) age specific case fatality rates. We provide numerous applications of this approach, covering Italy, Germany, South Korea, Spain, and Belgium. Among other things, we show that 50 percent of the difference between the CFR in Germany and in Italy can be explained with differences in the age structure of cases. Moreover, we show that increases in the Italian CFR over time are solely due to increasing age-specific CFRs and thus worsening health outcomes of those infected with COVID-19.   
+We use demographic decomposition methods to disentangle two potential drivers of differences and trends: (1) the age structure of cases and (2) age-specific case fatality rates. We provide numerous applications of this approach, covering Italy, Germany, South Korea, Spain, and Belgium. We show, among other things, that clsoe to 50 percent of the difference between the CFR in Germany and in Italy can be explained with differences in the age structure of cases -- infected individuals in Italy tend to be older. Moreover, we show that increases in the Italian CFR over time are solely due to increasing age-specific CFRs and thus worsening health outcomes of those infected with COVID-19 as health care provision started to fail.   
 
 # Data sources
 

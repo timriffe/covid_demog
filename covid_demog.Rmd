@@ -1,8 +1,8 @@
 ---
-title: "Monitoring trends and differences in COVID-19 case fatality rates using decomposition methods: - A demographic perspective"
+title: "Monitoring trends and differences in COVID-19 case fatality rates using decomposition methods: A demographic perspective"
 author: "Christian Dudel, Tim Riffe"
-date: "23-March-2020"
-output: pdf_document
+date: "24-March-2020"
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -11,20 +11,25 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Summary
 
-COVID-19 has been spreading rapidly across the world. The case fatality rates (CFRs) associated with COVID-19 outbreaks in different countries, however, vary considerably. Moreover, the CFR is often based on cumulative case counts and death counts, and thus changes over time as the disease spreads. What is driving differences between countries and changes over time in the CFR is currently not well understood. 
+COVID-19 has been spreading rapidly across the world. The case fatality rates (CFRs) associated with COVID-19 outbreaks in different countries have, however, varied significantly. Moreover, the CFR of a country can change considerably over time as the disease spreads. What is driving differences in the CFR between countries and changes over time is currently not well understood. 
 
-We use demographic decomposition methods to disentangle two potential drivers of differences and trends: (1) the age structure of cases and (2) age specific case fatality rates. We provide numerous applications of this approach, covering Italy, Germany, South Korea, Spain, and Belgium. Among other things, we show that 50 percent of the difference between the CFR in Germany and in Italy can be explained with differences in the age structure of cases. Moreover, we show that increases in the Italian CFR over time are solely due to increasing age-specific CFRs and thus worsening health outcomes of those infected with COVID-19.   
+We use demographic decomposition methods to disentangle two potential drivers of differences and trends: (1) the age structure of cases and (2) age-specific case fatality rates. We provide numerous applications of this approach, covering Italy, Germany, South Korea, Spain, and Belgium. We show, among other things, that clsoe to 50 percent of the difference between the CFR in Germany and in Italy can be explained with differences in the age structure of cases -- infected individuals in Italy tend to be older. Moreover, we show that increases in the Italian CFR over time are solely due to increasing age-specific CFRs and thus worsening health outcomes of those infected with COVID-19 as health care provision started to fail.   
 
 # Introduction
 
 The novel severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), or Coronavirus disease 2019 (COVID-19) for short, has been spreading rapidly across the world, and on March 11 2020 was recognised as a pandemic by the World Health Organization.  
 
 COVID-19 outbreaks went along with mostly regular patterns of logarithmic increase of case counts, with a few notable execptions. The number of deaths associated with COVID-19, however, have evolved considerably less regularly. 
-For instance, as of March 24 2020, Germany had a total of around 27 thousand confirmed infections and 114 deaths, resulting in a case fatality rate (CFR) of around 0.4 percent [source]. Italy, on the other hand, up to the same day, had close to 64 thousand cases, around 6 thousand deaths, and a CFR of 9.5 percent. On March 16, Italy had roughly the same number of cases as Germany on March 24, and a CFR of 7.7 percent. Thus, the outbreak in Italy is going along with a much higher CFR, and Italys CFR increased over time. 
 
-What is driving differences and trends such as these is currently not well understood. On the one hand, a higher CFR could mean that the risk of dying of COVID-19 differs between countries or changes over time. On the other hand, demographers have argued that age structure matters [1,2]. The age structure of infected cases will matter if the risk of dying varies with age, which is well documented for COVID-19 [reference]. If, for instance, in one country the disease mostly spreads among the young and in another country spreads among older individuals, and at the same time older individuals have a higher risk of dying, then CFRs will differ, even if age-specific fatality rates are the same in both countries. So far, there have been no assessments of the impact of the age structure of cases of infections, and the literature only provided qualitative assessments of the age structure of different populations to judge the potential severity of COVID-19 outbreaks.
+For instance, as of March 24 2020, Germany had a total of around 27 thousand confirmed infections and 114 deaths, resulting in a case fatality rate (CFR) of around 0.4 percent [reference]. Italy, on the other hand, up to the same day, had close to 64 thousand cases of infection, around 6 thousand deaths, and a CFR of 9.5 percent. On March 16, Italy had roughly the same number of cases as Germany on March 24, and a CFR of 7.7 percent. Thus, the outbreak in Italy is going along with a much higher CFR, and Italys CFR increased over time. 
 
-In this paper, we use a demographic decomposition technique to disentangle two potential drivers of differences and trends: (1) the age structure of cases and (2) age-specific CFRs. The approach allows to specifically quantify what proportion of a difference of two CFRs can be attributed to age structure and what proportion can be attributed to age-specific CFRs. All data that is required are case counts and death counts by age groups. We provide numerous applications of this approach, covering data from Italy, Germany, South Korea, Spain, and Belgium. Our findings show, among other things, that differences between countries with low CFRs (Germany, South Korea) and countries with high CFRs (Italy, Spain) are driven up to 50% by differences in the age structure of cases.
+What is driving differences and trends in the CFR is currently not well understood. On the one hand, a higher CFR could mean that the risk of dying of COVID-19 differs between countries or changes over time. On the other hand, it could also imply a less favorable composition of the infected population. Specifically, the risk of dying of COVID-19 is well-documented to increase with age. Thus, if the population of infected individuals is older in one case than in another, then the CFR will be higher, even if the age-specific risk of dying is the same. 
+
+Indeed, demographers have argued that age structure matters [1,2]. So far, however,  there have been no assessments of the impact of the age structure of cases of infections, and the literature only provided qualitative assessments of the age structure of different populations to judge the potential severity of COVID-19 outbreaks.
+
+In this paper, we use a demographic decomposition technique to disentangle two potential drivers of differences and trends: (1) the age structure of infection cases and (2) age-specific CFRs. The approach allows to specifically quantify what proportion of a difference between two CFRs can be attributed to age structure and what proportion can be attributed to age-specific CFRs. All data that is required are case counts and death counts by age groups. 
+
+We provide numerous applications of this approach, covering data from Italy, Germany, South Korea, Spain, and Belgium. Our findings show, among other things, that differences between countries with low CFRs (Germany, South Korea) and countries with high CFRs (Italy, Spain) are driven up to 50% by differences in the age structure of cases.
 
 To facilitate the application of the approach described in this paper, we provide code and reproducibility materials for the open source statistical software R.
 
@@ -34,7 +39,7 @@ To facilitate the application of the approach described in this paper, we provid
 
 The COVID-19 case fatality rate (CFR) is defined as the ratio of deaths associated with COVID-19 divided by the number of detected COVID-19 cases. Formally, if we denote with $D$ the total number of deaths associated with COVID-19 and with $N$ the total number of cases, then $$\textrm{CFR}=\frac{D}{C}.$$ 
 
-If case counts and death counts are available by age, the CFR can also be written as a sum of age-specific CFRs weighted by the proportion of cases in a certain age group. We use $a$ as an index to denote different age groups, and $A$ to denote the total number of age groups. We define age-specific CFRs as $C_a=D_a/N_a$; i.e., the number of deaths in age group $a$ divided by the number of cases in the same age group. The proportion of cases in age group $a$ is given by $P_a=N_a/N$. Using this notation, the CFR can be written as a weighted average of age-specific CFRs: $$\textrm{CFR}=\sum P_a C_a.$$ 
+If case counts and death counts are available by age, the CFR can also be written as a sum of age-specific CFRs weighted by the proportion of cases in a certain age group. We use $a$ as an index to denote different age groups, and we define age-specific CFRs as $C_a=D_a/N_a$; i.e., the number of deaths in age group $a$ divided by the number of cases in the same age group. The proportion of cases in age group $a$ is given by $P_a=N_a/N$. Using this notation, the CFR can be written as a weighted average of age-specific CFRs: $$\textrm{CFR}=\sum P_a C_a.$$ 
 
 ## Decomposing CFRs
 
