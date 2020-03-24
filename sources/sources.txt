@@ -1,0 +1,10 @@
+Source notes for input data csv
+--------------------------------
+
+(Spain 23.03.2020)
+MinisterioNr54
+https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_54_COVID-19.pdf
+
+
+
+

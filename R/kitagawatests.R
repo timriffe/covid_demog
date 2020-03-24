@@ -42,7 +42,7 @@
   # Only 80 deaths; sometimes 80+ or 90+ etc, but does not matter given age bands of
   # cases; sometimes "?lter", coded as NA, but then assumed that 80+ is fine
   
-  cases_DE <- c(60+97,239+251,2800+3100,5000+6700,1400+2000,296+313)
+  cases_DE  <- c(60+97,239+251,2800+3100,5000+6700,1400+2000,296+313)
   deaths_DE <- c(89,78,73,67,80,78,80,85,84,76,86,83,80,81,94,81,
                  85,80,88,90,80,80,80,80,68,78,87,83,84,85,80,80,
                  71,90,84,80,90,90,90,82,87,80,80,80,80,95,89,87,
