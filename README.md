@@ -4,6 +4,10 @@ Christian Dudel, dudel@demogr.mpg.de
 
 Tim Riffe, riffe@demogr.mpg.de
 
+Enrique Acosta, acosta@demogr.mpg.de
+
+Mikko Myrskylä, myrskyla@demogr.mpg.de
+
 Max Planck Institute for Demographic Research, Rostock, Germany
 
 # Summary
