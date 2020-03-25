@@ -30,4 +30,12 @@ https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-inte
 IT09.03.2020
 https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_09-marzo-2020.pdf
 
-  
+(South Korea 17.03.2020)
+SK17.03.2020
+https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578
+
+(South Korea 25.03.2020)
+SK25.03.2020
+https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030
+
+
