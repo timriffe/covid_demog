@@ -16,6 +16,7 @@ ES.23.03.2020
 ES.22.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_53_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_53_COVID-19.pdf)
 
+# Canada
 (Canada 24.03.2020)
 Canada24-03-2020
 Note: checked 25.03.2020
@@ -57,14 +58,14 @@ NYC data check here:
 
 (United States 16.03.2020)
 US16.03.2020
-(enter url)[]
+[https://www.cdc.gov/mmwr/volumes/69/wr/mm6912e2.htm?s_cid=mm6912e2_w#T1_down]
 
 # France
 add url to check daily
 
-(France 20.03.2020)
+(France 10.03.2020)
 FR10.03.2020
-(enter url)[]
+[https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date]
 
 # China
 add url, search for earlier versions
