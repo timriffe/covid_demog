@@ -1,7 +1,7 @@
 ---
 title: "Monitoring trends and differences in COVID-19 case fatality rates using decomposition methods: A demographic perspective"
-author: "Christian Dudel, Tim Riffe"
-date: "24-March-2020"
+author: "Christian Dudel, Tim Riffe, Enrique Acosta, Mikko Myrskylä"
+date: "25-March-2020"
 output: html_document
 ---
 
@@ -15,7 +15,7 @@ COVID-19 has been spreading rapidly across the world. The case fatality rates (C
 
 We use demographic decomposition methods to disentangle two potential drivers of differences and trends: (1) the age structure of cases and (2) age-specific case fatality rates. We provide numerous applications of this approach, covering Italy, Germany, South Korea, Spain, and Belgium. We show, among other things, that clsoe to 50 percent of the difference between the CFR in Germany and in Italy can be explained with differences in the age structure of cases -- infected individuals in Italy tend to be older. Moreover, we show that increases in the Italian CFR over time are solely due to increasing age-specific CFRs and thus worsening health outcomes of those infected with COVID-19 as health care provision started to fail.   
 
-# Introduction
+# 1 Introduction
 
 The novel severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), or Coronavirus disease 2019 (COVID-19) for short, has been spreading rapidly across the world, and on March 11 2020 was recognised as a pandemic by the World Health Organization.  
 
@@ -33,28 +33,32 @@ We provide numerous applications of this approach, covering data from Italy, Ger
 
 To facilitate the application of the approach described in this paper, we provide code and reproducibility materials for the open source statistical software R.
 
-# Methods
+# 2 Methods
 
-## Case fatality rates
+## 2.1 Case fatality rates
 
 The COVID-19 case fatality rate (CFR) is defined as the ratio of deaths associated with COVID-19 divided by the number of detected COVID-19 cases. Formally, if we denote with $D$ the total number of deaths associated with COVID-19 and with $N$ the total number of cases, then $$\textrm{CFR}=\frac{D}{C}.$$ 
 
 If case counts and death counts are available by age, the CFR can also be written as a sum of age-specific CFRs weighted by the proportion of cases in a certain age group. We use $a$ as an index to denote different age groups, and we define age-specific CFRs as $C_a=D_a/N_a$; i.e., the number of deaths in age group $a$ divided by the number of cases in the same age group. The proportion of cases in age group $a$ is given by $P_a=N_a/N$. Using this notation, the CFR can be written as a weighted average of age-specific CFRs: $$\textrm{CFR}=\sum P_a C_a.$$ 
+This expression will be used in the decomposition approach described below.
 
-## Decomposing CFRs
+## 2.2 Decomposing CFRs
 
-What we are ultimatively interested in is to decompose or "explain" the difference between two CFRs, irrespective of whether they are for two different countries, or for the same country at two different points in time, or for different groups within a country, e.g., socio-economic groups. We will use $\textrm{CFR}_i$ and $\textrm{CFR}_j$ to distinguish the two CFRs, e.g., country $i$ and country $j$. Moreover, we write $P_{ia}$, $C_{ia}$, $P_{ja}$, and $C_{ja}$ for the underlying age compositions and age-specific CFRs.  
+We want to decompose, or "explain", the difference between two CFRs, irrespective of whether they are for two different countries, or for the same country at two different points in time, or for different groups within a country, e.g., socio-economic groups. We will use $\textrm{CFR}_i$ and $\textrm{CFR}_j$ to distinguish the two CFRs, e.g., country $i$ and country $j$. Moreover, we write $P_{ia}$, $C_{ia}$, $P_{ja}$, and $C_{ja}$ for the underlying age compositions and age-specific CFRs; i.e., $\textrm{CFR}_i=\sum P_{ia} C_{ia}$.   
 
-Using a decomposition approach introduced by Kitagawa [3] we separate the difference between to CFRs into two distinct parts, $$\textrm{CFR}_i-\textrm{CFR}_j=\alpha + \delta,$$ where $\alpha$ captures the part of the difference between CFRs which is due to differences in the age composition of cases, and $\delta$ is due to differences in mortality. $\alpha$ is given by $$\alpha=0.5 \left(\textrm{CFR}_i-\sum P_{ja} C_{ia}+\sum P_{ia} C_{ja}-\textrm{CFR}_j \right),$$ while $\delta$ can be calculated as $$\delta=0.5 \left(\textrm{CFR}_i-\sum P_{ia} C_{ja}+\sum P_{ja} C_{ia}-\textrm{CFR}_j \right).$$
+Using a decomposition approach introduced by Kitagawa [3] we separate the difference between to CFRs into two distinct parts, $$\textrm{CFR}_i-\textrm{CFR}_j=\alpha + \delta,$$ where $\alpha$ captures the part of the difference between CFRs which is due to differences in the age composition of cases, and $\delta$ is due to differences in mortality. $\alpha$ is given by $$\alpha=0.5 \left(\textrm{CFR}_i-\sum P_{ja} C_{ia}+\sum P_{ia} C_{ja}-\textrm{CFR}_j \right),$$ while $\delta$ can be calculated as $$\delta=0.5 \left(\textrm{CFR}_i-\sum P_{ia} C_{ja}+\sum P_{ja} C_{ia}-\textrm{CFR}_j \right).$$ Note that the age groups for group $i$ and group $j$ need to be the same. If this is not the case in the raw data and, for instance, one country reports counts in 5-year age groups (0-4, 5-9, 10-14, 15-19, ...) and the other uses 10-year age groups (0-9, 10-19, ...), then the more finely grained data needs to be aggregated to match the coarser data.
 
+The intuition behind the formulas is as follows. The first two terms in brackets in the equation for $\alpha$ are $\textrm{CFR}_i-\sum P_{ja} C_{ia}$, or, replacing $\textrm{CFR}_i$ with its definition, $\sum P_{ia} C_{ia}-\sum P_{ja} C_{ia}$. The second sum in this expression captures how high the CFR would have been if group $i$ had the same age distribution of infections as group $j$. The difference to the actual CFR (the whole expression) then captures to what extent the CFR is higher than this hypothetical CFR because of the actually observed age distribution of cases. The third and the fourth term in brackets in the equation for $\alpha$ are following a similar logic, but using a different hypothetical comparison, asking how much the CFR of group $j$ would differ it if had the age distribution of age $j$. The formula for $\delta$ again follows a similar logic, but now replacing the age-specific CFRs instead of the age distribution.
 
-As an artificial example, assume that the CFR in country A is equal to 2 percent, while it equals 4 percent in country B. Subtracting the CFR of country A from country B gives a difference of 2 percentage points. If a large part of this difference would be due to the age structure, then $\alpha$ could be $0.015$ and $\delta$ could be $0.005$, together being equal to $0.02$ or 2 percentage points. If, as another example, two countries have the same age structure of cases, then $\alpha$ will be zero. Similar holds for $\delta$ if age-specific CFRs are the same for both countries under conisderation.
+To calculate the proportion $\alpha$ and $\delta$ contribute to the total difference one can use $\frac{|\alpha|}{|\alpha|+|\delta|}$ in case of $\alpha$ and $\frac{|\delta|}{|\alpha|+|\delta|}$ for the contribution of $\delta$.  
 
-To calculate the proportion $\alpha$ and $\delta$ contribute to the total difference one can use $$\frac{|\alpha|}{|\alpha|+|\delta|}$$ in case of $\alpha$ and $$\frac{|\delta|}{|\alpha|+|\delta|}$$ for the contribution of $\delta$. In the previous example above, $\alpha$ explains $75%$ of the difference between the two CFRs. 
+## 2.3 Interpretation
 
-Note that the total difference between two CFRs as well as both $\alpha$ and $\delta$ can be negative, and the formula for the relative contribution takes this into account by using absolute values. If the total difference is positive and either $\alpha$ or $\delta$ are negative, it means that the corresponding part of the difference actually reduces the difference between CFRs. For instance, when comparing the CFR for one country at two points in time, the total difference could be $0.03$; i.e., the CFR increased by three percentage points. If in this case $\alpha$ would be negative, say $-0.01$, it would mean that the age distribution of cases over time got more similar. $\delta$ would be $0.04$ in this scenario, and without changes in the age distribution of infections as captured through $\alpha$, the difference between CFRs would even have increased by four percentage points.
+As an artificial example, assume that the CFR in country A is equal to 2 percent, while it equals 4 percent in country B. Subtracting the CFR of country A from country B gives a difference of 2 percentage points. If a large part of this difference would be due to the age structure, then $\alpha$ could be $0.015$ and $\delta$ could be $0.005$, together being equal to $0.02$ or 2 percentage points. If, as another example, two countries have the same age structure of cases, then $\alpha$ will be zero. Similar holds for $\delta$ if age-specific CFRs are the same for both countries under conisderation. In relative terms, the $\alpha$-component explains 75 percent of the difference between countries, while the $\delta$-component only explains 25 percent.
 
-# Data
+Note that the total difference between two CFRs as well as both $\alpha$ and $\delta$ can be negative. The formulas for the relative contributions take this into account by using absolute values. If the total difference is positive and either $\alpha$ or $\delta$ are negative, it means that the corresponding part of the difference actually reduces the difference between CFRs. For instance, when comparing the CFR for one country at two points in time, the total difference could be $0.03$; i.e., the CFR increased by three percentage points. If in this case $\alpha$ would be negative, say $-0.01$, it would mean that the age distribution of cases over time got more similar. $\delta$ would be $0.04$ in this scenario, and without changes in the age distribution of infections as captured through $\alpha$, the difference between CFRs would even have increased by four percentage points.
+
+# 3 Data
 
 We use data for the following countries:
 
@@ -74,18 +78,20 @@ The data is provided using different age groups. The following age groups are us
 
 For the decomposition, the age groups have to match. This means that for some country comparisons age groups have to be aggregated. For instance, when comparing Germany with Italy, the data of both countries has to be aggregated to three age groups: below 60, 60-79, 80 and older. In contrast, this is not necessary when comparing Spain and South Korea, and to a much lesser extent when comparing Italy with the latter two, as in that case only for Italy the two age categories 80-89 and 90+ have to be combined.
 
-# Results
+# 4 Results
 
 Results can be output using the provided R code. Some examples are provided here.
 
 * Germany vs Italy (March 19): The CFR for Germany is $0.4$ percent, while the CFR of Italy was around $8.6$ percent. The difference is thus around $8.2$ percentage points ($0.082$). $\alpha$ equals $0.037$ and $\delta$ amounts to $0.044$. Thus, the age component explains roughly 46% of the difference, while the mortality component explains 54% percent.
 * Italy (March 16) vs Italy (March 19): From March 16 2020 to March 19 the CFR in Italy increased by $1.8$ percentage points from $6.8$ percent to $8.6$ percent. $\alpha$ is about $-0.001$ and thus actually reducing the difference, albeit only to a small extent, while $\delta$ equals $0.019$. This means that around 92% of the change over time can be attributed to (increasing) mortality, while the age structure of cases only had a small effect but became more favorable.
 
-# Discussion
+# 5 Discussion
 
-Decomposing differences in case fatality rates over time or between countries reveals crucial insights for monitoring the spread of COVID-19. Our results, for instance, show that differences between countries with low and high CFRs can be driven by the age structure of cases to a significant extent. 
+Decomposing differences in case fatality rates over time or between countries reveals crucial insights for monitoring the spread of COVID-19. Our results, for instance, show that differences between countries with low and high CFRs can be driven to a significant extent by the age structure of cases. 
 
-There are potential limitations to the approach discussed here. Most importantly, case counts as well as death counts depend on the testing regime, and both types of counts may be affected by other issues like reporting delays [4]. This means that, for instance, if our approach indicates that a large part of a difference is due to the age structure, this might actually only reflect differences in testing. To assess to what extent this is the case requires expertise about the contexts which are being compared. Results will be, however, correct in the sense that they point reseachers to the structure of cases as causing differences; what causes the structure of cases to differ is another question not answered by our approach.
+There are potential limitations to the approach discussed here. Most importantly, case counts as well as death counts depend on the testing regime, and both types of counts may be affected by other issues like reporting delays [4]. This means that, for instance, if our approach indicates that a large part of a difference is due to the age structure, this might actually only reflect differences in testing. To assess to what extent this is the case requires expertise about the contexts which are being compared. Results will be, however, correct in the sense that they point reseachers to the age structure of cases as causing differences; what causes the age structure to differ is another question not answered by our approach.
+
+Another caveat is that the choice of age groups will somewhat affect results. 
 
 
 # References
