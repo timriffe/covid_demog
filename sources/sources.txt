@@ -10,5 +10,10 @@ https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-Ch
 MinisterioNr53
 https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_53_COVID-19.pdf
 
+(Canada 24.03.2020)
+Canada24-03-2020
+https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals/epidemiological-summary-covid-19-cases.html
+
+
 
 
