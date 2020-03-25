@@ -87,11 +87,13 @@ Results can be output using the provided R code. Some examples are provided here
 
 # 5 Discussion
 
-Decomposing differences in case fatality rates over time or between countries reveals crucial insights for monitoring the spread of COVID-19. Our results, for instance, show that differences between countries with low and high CFRs can be driven to a significant extent by the age structure of cases. 
-
 There are potential limitations to the approach discussed here. Most importantly, case counts as well as death counts depend on the testing regime, and both types of counts may be affected by other issues like reporting delays [4]. This means that, for instance, if our approach indicates that a large part of a difference is due to the age structure, this might actually only reflect differences in testing. To assess to what extent this is the case requires expertise about the contexts which are being compared. Results will be, however, correct in the sense that they point reseachers to the age structure of cases as causing differences; what causes the age structure to differ is another question not answered by our approach.
 
-Another caveat is that the choice of age groups will somewhat affect results. 
+Another caveat is that the choice of age groups will somewhat affect results. If age groups are chosen too wide it might hide actual differences. For instance, if all infected individuals above age 60 are summarized in one age group, then the proportion of this age group could be the same in two countries, while in one country the cases could tend to be in the lower part of the interval, while in the other most cases could be older. This could in turn affect the age-specific CFR, and it would reduce the $\alpha$-component and inflate the $\delta$-component. Analyses provided in the supplementary materials show, however, that the effect of such an aggregation bias is rather limited.
+
+# 6 Conclusion
+
+Decomposing differences in case fatality rates over time or between countries reveals crucial insights for monitoring the spread of COVID-19. Our results, for instance, show that differences between countries with low and high CFRs can be driven to a significant extent by the age structure of cases. 
 
 
 # References
