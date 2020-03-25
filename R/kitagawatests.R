@@ -1,3 +1,6 @@
+library(here)
+source(here("R/00_functions.R"))
+
 ### Data South Korea ####
 
   # Source: https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578
@@ -76,49 +79,6 @@
 
 
 ### Function: Raw case fatality rate ####
-
-  cfr <- function(cases,deaths=NULL,cfr_age=NULL) {
-    
-    age_dis <- cases/sum(cases)
-    if(is.null(cfr_age)) cfr_age <- deaths/cases
-    
-    sum(age_dis*cfr_age)
-    
-  }
-  cfr2 <- function(cc,rr){
-    sum(cc * rr)
-  }
-  
-  # v1, mirrors below formulas exactly
-  kitagawa_cfr <- function(c1, r1, c2, r2){
-    c1  <- c1 / sum(c1)
-    c2  <- c2 / sum(c2)
-    
-    Tot <- cfr2(c1,r1) - cfr2(c2,r2)
-    Aa  <- 0.5 * (cfr2(c1,r1)-cfr2(c2,r1)+cfr2(c1,r2)-cfr2(c2,r2))
-    Bb  <- 0.5 * (cfr2(c1,r1)-cfr2(c1,r2)+cfr2(c2,r1)-cfr2(c2,r2))
-    list(Diff = Tot, AgeComp = Aa, RateComp = Bb)
-  }
-  # v2 simplifies the above
-  kitagawa_cfr2 <- function(c1, r1, c2, r2){
-    c1  <- c1 / sum(c1)
-    c2  <- c2 / sum(c2)
-    
-    Tot <- cfr2(c1, r1) - cfr2(c2, r2)
-    Aa  <- 0.5 * (Tot + cfr2(c1, r2) - cfr2(c2, r1))
-    Bb  <- 0.5 * (Tot + cfr2(c2, r1) - cfr2(c1, r2))
-    list(Diff = Tot, AgeComp = Aa, RateComp = Bb)
-  }
-  # v3 is one most would recognize, fewer computations too.
-  kitagawa_cfr3 <- function(c1, r1, c2, r2){
-    c1  <- c1 / sum(c1)
-    c2  <- c2 / sum(c2)
-    
-    Tot <- cfr2(c1, r1) - cfr2(c2, r2)
-    Aa  <- sum((c1 - c2) * (r1 + r2) / 2)
-    Bb  <- sum((r1 - r2) * (c1 + c2) / 2)
-    list(Diff = Tot, AgeComp = Aa, RateComp = Bb)
-  }
   
   # Some checks: Matches with numbers on websites
   cfr(cases=cases_IT,death=deaths_IT)
