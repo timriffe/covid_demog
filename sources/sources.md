@@ -49,4 +49,28 @@ SK17.03.2020
 SK25.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
+# USA
+add urls to check daily:
+
+NYC data check here: 
+[https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf)
+
+(United States 16.03.2020)
+US16.03.2020
+(enter url)[]
+
+# France
+add url to check daily
+
+(France 20.03.2020)
+FR10.03.2020
+(enter url)[]
+
+# China
+add url, search for earlier versions
+
+(China 11.02.2020)
+CN11.02.2020
+(enter url)[]
+
 

@@ -1,4 +1,13 @@
 
+
+# session setup
+library(here)
+library(tidyverse)
+library(ungroup)
+
+
+
+
 # redistribute unknown age cases and deaths, tidy
 
 # standardize age groups cases and deaths, using pclm
