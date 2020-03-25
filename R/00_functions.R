@@ -1,11 +1,13 @@
 
 
 # session setup
+
+# TODO: set this up with pacman or renv in a separate step
 library(here)
 library(tidyverse)
 library(ungroup)
 
-
+# 
 
 
 # redistribute unknown age cases and deaths, tidy
@@ -14,7 +16,7 @@ library(ungroup)
 
 
 
-# cfr
+# cfr CD's version
 cfr <- function(cases,deaths=NULL,cfr_age=NULL) {
   
   age_dis <- cases/sum(cases)
@@ -24,7 +26,7 @@ cfr <- function(cases,deaths=NULL,cfr_age=NULL) {
   
 }
 
-# this one takes age specific cases and case fatality rates
+# this one takes age specific cases and case fatality rates, just a sum product
 cfr2 <- function(cc,rr){
   sum(cc * rr)
 }
