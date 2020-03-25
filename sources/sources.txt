@@ -19,6 +19,10 @@ https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-
 IT19.03.2020
 https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_19-marzo%202020.pdf
 
+(Italy 16.03.2020)
+IT16.03.2020
+https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_16%20marzo%202020.pdf
+
 (Italy 23.03.2020)
 IT23.03.2020
 https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_23-marzo%202020.pdf
@@ -27,7 +31,4 @@ https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-inte
 IT09.03.2020
 https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_09-marzo-2020.pdf
 
-
-
-https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_09-marzo-2020.pdf
-
+  
