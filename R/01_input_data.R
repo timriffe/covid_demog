@@ -8,7 +8,7 @@ dat <- sheets_read(ss, skip =1)
 
 
 do.this <- FALSE
-if (do.this){}
+if (do.this){
 # https://github.com/beoutbreakprepared/nCoV2019/
 # grabbing from 
 library(RCurl)
