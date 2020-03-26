@@ -41,6 +41,17 @@ IT23.03.2020
 IT09.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_09-marzo-2020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_09-marzo-2020.pdf)
 
+(Italy 24.03.2020)
+ITinfo24.03.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_24marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_24marzo%20ITA.pdf)
+
+(Italy 25.03.2020)
+ITinfo25.03.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_25marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_25marzo%20ITA.pdf)
+
+
 # South Korea
 (South Korea 17.03.2020)
 SK17.03.2020
