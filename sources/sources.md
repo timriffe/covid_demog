@@ -18,7 +18,7 @@ ES.22.03.2020
 
 # Canada
 (Canada 24.03.2020)
-Canada24-03-2020
+CA24.03.2020
 Note: checked 25.03.2020
 [https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals/epidemiological-summary-covid-19-cases.html](https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals/epidemiological-summary-covid-19-cases.html)
 
