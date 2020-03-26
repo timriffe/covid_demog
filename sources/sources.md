@@ -55,6 +55,11 @@ ITinfo25.03.2020
 [approximate from infographic]
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_25marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_25marzo%20ITA.pdf)
 
+(Italy 26.03.2020)
+ITinfo26.03.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_26marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_26marzo%20ITA.pdf)
+
 
 # South Korea
 (South Korea 17.03.2020)
