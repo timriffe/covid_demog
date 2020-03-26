@@ -69,6 +69,8 @@ SK25.03.2020
 add urls to check daily:
 
 NYC data check here: 
+USA_NYC24.03.2020 (cases and deaths)
+USA_NYC26.03.2020 (only cases, no deaths)
 [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf)
 
 (United States 16.03.2020)
@@ -86,6 +88,10 @@ FR10.03.2020
 
 (China 11.02.2020)
 CN11.02.2020
-(http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51)[http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51]
+[http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51](http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51)
 
+# Germany
 
+(Germany 25.03.2020)
+DE25.03.2020
+[]()
