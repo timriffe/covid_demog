@@ -2,11 +2,11 @@
 title: "Monitoring trends and differences in COVID-19 case fatality rates using decomposition methods: A demographic perspective"
 shorttitle: "Decomposing differences in COVID-19 case fatality rates"
 
-date: "25-March-2020"
+date: "26-March-2020"
 
 author: "Christian Dudel, Tim Riffe, Alyson van Raalte, Enrique Acosta, Mikko Myrskylä"
 
-abstract: "COVID-19 has been spreading rapidly across the world. The case fatality rates (CFRs) associated with COVID-19 outbreaks in different countries have, however, varied significantly. Moreover, the CFR of a country can change considerably over time as the disease spreads. What is driving differences in the CFR between countries and changes over time is currently not well understood. We use demographic decomposition methods to disentangle two potential drivers of differences and trends: (1) the age structure of cases and (2) age-specific case fatality rates. We provide numerous applications of this approach, covering Italy, Germany, South Korea, Spain, France, and the United States. We show, among other things, that clsoe to 50 percent of the difference between the CFR in Germany and in Italy can be explained with differences in the age structure of cases -- infected individuals in Italy tend to be older. Moreover, we show that increases in the Italian CFR over time are solely due to increasing age-specific CFRs and thus worsening health outcomes of those infected with COVID-19 as health care provision started to fail." 
+abstract: "COVID-19 has been spreading rapidly across the world. The case fatality rates (CFRs) associated with COVID-19 outbreaks in different countries have, however, varied significantly. Moreover, the CFR of a country can change considerably over time as the disease spreads. What is driving differences in the CFR between countries and changes over time is currently not well understood. We use demographic decomposition methods to disentangle two potential drivers of differences and trends: (1) the age structure of cases and (2) age-specific case fatality rates. We provide numerous applications of this approach, covering Italy, Germany, South Korea, Spain, France, and the United States. We show, among other things, that close to 50 percent of the difference between the CFR in Germany and in Italy can be explained with differences in the age structure of cases -- infected individuals in Italy tend to be older. Moreover, we show that increases in the Italian CFR over time are solely due to increasing age-specific CFRs and thus worsening health outcomes of those infected with COVID-19 as health care provision started to fail." 
 
 keywords: "COVID-19; decomposition; case fatality rate"
 
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # 1 Introduction
 
-The novel severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), or Coronavirus disease 2019 (COVID-19) for short, has been spreading rapidly across the world, and on March 11 2020 was recognised as a pandemic by the World Health Organization.  
+The novel Coronavirus disease 2019 (COVID-19), caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), has been spreading rapidly across the world, and on March 11 2020 was recognised as a pandemic by the World Health Organization.  
 
 COVID-19 outbreaks went along with mostly regular patterns of logarithmic increase of case counts, with a few notable execptions. The number of deaths associated with COVID-19, however, have evolved considerably less regularly, and case fatality rates (CFRs) differ substantially between countries [1]. 
 
@@ -64,7 +64,7 @@ Note that the total difference between two CFRs as well as both $\alpha$ and $\d
 
 We use data on cumulative infections and deaths for the following countries (in alphabetical order):
 
-* France, DATE
+* France, March 15 2020
 * Germany, March 23 2020
 * Italy, March 16 2020 and March 19 2020
 * South Korea, March 17 2020
@@ -75,14 +75,14 @@ All data is reported by the respective health authorities, except for the death 
 
 The data is provided using different age groups. The following age groups are used in the original data for both case counts and death counts:
 
-* France: 0-17, 18-64, 65-74, 75+
+* France: 0-14, 15-44, 45-64, 65-74, 75+
 * Germany: 0-4, 5-14, 15-34, 35-59, 60-79, 80+  
 * Italy: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80-89, 90+
 * Spain: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80+
 * South Korea: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80+
 * United States: 0-19, 20-44, 45-54, 55-64, 65-74, 75-84, 85+
 
-For the decomposition, the age groups have to match. This means that for some country comparisons age groups have to be aggregated. For instance, when comparing Germany with Italy, the data of both countries has to be aggregated to three age groups: below 60, 60-79, 80 and older. In contrast, this is not necessary when comparing Spain and South Korea, and to a much lesser extent when comparing Italy with the latter two, as in that case only for Italy the two age categories 80-89 and 90+ have to be combined.
+For the decomposition, the age groups have to match. This means that for some country comparisons age groups have to be aggregated. For instance, when comparing Germany with Italy, the data of both countries has to be aggregated to three age groups: below 60, 60-79, and 80 and older. In contrast, this is not necessary when comparing Spain and South Korea, and to a much lesser extent when comparing Italy with the latter two, as in that case only for Italy the two age categories 80-89 and 90+ have to be combined.
 
 # 4 Results
 
