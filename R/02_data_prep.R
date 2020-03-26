@@ -1,28 +1,37 @@
-# TR: THIS DOESN"T DO ANYTHING YET, I"LL GET BACK TO IT
-
 
 # creates object 'dat'
-source(here("R/01_input_data.R"))
 source(here("R/00_functions.R"))
+source(here("R/01_input_data.R"))
+
 
 
 # first, let's standardize age groups of deaths and cases.
-# to 5 or 10-year age groups 0-100.
+# 10-year age groups 0-90+
+# where needed, splitting is done using pclm()
 
-# 1) redistribute unknown cases and deaths.
-
-
-# TR: Q: I'
 dat <- dat %>% 
-  filter(Country != "Canada") %>% 
+  # figure out which subsets have both cases and deaths
   group_by(Country, Date, Code, Sex) %>% 
+  mutate(keep = all(!is.na(Cases)) & all(!is.na(Deaths))) %>% 
+  filter(keep) %>% 
+  # distribute, then standardize
   do(redistribute_NAs(.chunk = .data)) %>% 
-  do(standardize_chunk(.chunk = .data)) %>% 
-  unnest(cols = c())
+  do(standardize_chunk(.chunk = .data, N = 10, OA = 90)) %>% 
+  unnest(cols = c()) %>% 
+  # get back age-specific case fatality rates
+  mutate(ascfr = Deaths / Cases,
+         ascfr = replace_na(ascfr, 0)) 
 
   
 
-
+# TR: for testing
+# .chunk <- dat %>% 
+#   # figure out which subsets have both cases and deaths
+#   group_by(Country, Date, Code, Sex) %>% 
+#   mutate(keep = all(!is.na(Cases)) & all(!is.na(Deaths))) %>% 
+#   filter(keep) %>% 
+#   do(redistribute_NAs(.chunk = .data)) %>% 
+#   filter(Code == "ES25.03.2020" & Sex == "b")
 
   
 

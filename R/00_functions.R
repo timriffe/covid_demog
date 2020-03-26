@@ -27,36 +27,64 @@ redistribute_NAs <- function(.chunk){
 # standardize age groups cases and deaths, using pclm
 # designed for tidy pipeline. Changes number of rows,
 # so do it inside do()
-standardize_chunk <- function(.chunk, N = 10){
+standardize_chunk <- function(.chunk, N = 10, OA = 90){
   
   n       <- nrow(.chunk)
   nlast   <- .chunk %>% pull(AgeInt) %>% "[["(n)
   x       <- .chunk %>% pull(Age) %>% unlist()
-  y_cases <- .chunk %>% pull(Cases) %>% unlist()
-  y_deaths <- .chunk %>% pull(Deaths) %>% unlist()
-  offset  <- pclm(x = x, 
-                  y = y_cases, 
-                  nlast = nlast,
-                  control = list(lambda = 100))$fitted
+  xi      <- .chunk %>% pull(AgeInt) %>% unlist()
   
-  # age-specific case fataity rates, single ages.
-  ascfr  <- pclm(x = x,
-                 y = y_deaths,
-                 offset = offset,
-                 nlast = nlast,
-                 control = list(lambda = 100))$fitted
-  deaths <- ascfr * offset
-  # sry hard coded for now
-  x1     <- 0:104
+  # indicator
+  isN     <- x %% N == 0 & xi == N & x < OA
   
-  # group deaths and cases back up to N-year age groups
-  Dhat   <- groupAges(deaths, Age = x1, N = N, OAnew = 100)
-  Chat   <- groupAges(offset, Age = x1, N = N, OAnew = 100)
-  Age    <- names2age(Dhat)
-  AgeInt <- age2int(Age,OAvalue = 5)
+  # incoming counts
+  Din    <- .chunk %>% pull(Deaths) %>% unlist()
+  Cin    <- .chunk %>% pull(Cases) %>% unlist()
+  
+  # if we're already in 10-year age groups, skip this altogether
+  if (!all(isN[x < OA]) | OA > max(x)){
+   
+    Chat  <- pclm(x = x, 
+                    y = Cin, 
+                    nlast = nlast,
+                    control = list(lambda = 100))$fitted
+    
+    # age-specific case fataity rates, single ages.
+    ascfr  <- pclm(x = x,
+                   y = Din,
+                   offset = Chat,
+                   nlast = nlast,
+                   control = list(lambda = 100))$fitted
+    Dhat   <- ascfr * Chat
+    # sry hard coded for now
+    x     <- 0:104
+  } else {
+    Dhat <- Din
+    Chat <- Cin
+  }
+  
+  # group deaths and cases back up to N-year age groups if graduated,
+  # and for both cases group DOWN to OA.
+  Dhat      <- groupAges(Dhat, Age = x, N = N, OAnew = OA)
+  Chat      <- groupAges(Chat, Age = x, N = N, OAnew = OA)
+  
+  Age       <- names2age(Dhat)
+  AgeInt    <- c(rep(N,length(Age) - 1),105 - OA + 1)
+  
+  # let's not overwrite (age groups could be mixed including
+  # canonical values)
+  # these indicators will only hold if incoming ages & intervals match
+  # outgoing ages & intervals
+  n               <- min(length(Age),length(x))
+  ind             <- 1:n
+  indL            <- Age[ind] == x[ind] & AgeInt[ind] == xi[ind]
+  indR            <- x[ind] == Age[ind] & xi[ind] == AgeInt[ind]
+  
+  Dhat[ind][indL] <- Din[ind][indR]
+  Chat[ind][indL] <- Cin[ind][indR]
+  
   tibble(Age = Age, AgeInt = AgeInt, Cases = Chat, Deaths = Dhat)
 }
-
 
 # cfr CD's version
 cfr <- function(cases,deaths=NULL,cfr_age=NULL) {
