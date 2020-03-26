@@ -68,10 +68,9 @@ FR10.03.2020
 [https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date]
 
 # China
-add url, search for earlier versions
 
 (China 11.02.2020)
 CN11.02.2020
-(enter url)[]
+(http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51)[http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51]
 
 
