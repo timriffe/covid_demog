@@ -64,31 +64,40 @@ Note that the total difference between two CFRs as well as both $\alpha$ and $\d
 
 We use data on cumulative infections and deaths for the following countries (in alphabetical order):
 
+* China, February 11 2020
 * France, March 15 2020
-* Germany, March 23 2020
-* Italy, March 16 2020 and March 19 2020
-* South Korea, March 17 2020
-* Spain, March 22 2020
+* Germany, March 25 2020
+* Italy, March 16 2020 and March 26 2020
+* South Korea, March 26 2020
+* Spain, March 25 2020
 * United States, March 16 2020
+* United States (New York only), March 24 2020
 
-All data is reported by the respective health authorities, except for the death data for Germany, which is based on press reports of age at death collected on Wikipedia. For a few cases this data does not report age (6 out of 86; 7 percent). For these cases it is imputed as being 80 or older. A complete list of sources is given at the end of this document.
+All data is provided by the respective health authorities, except for the death data for Germany, which is based on press reports of age at death collected on Wikipedia. A complete list of sources is given at the end of this document.
 
-The data is provided using different age groups. The following age groups are used in the original data for both case counts and death counts:
+For some of the countries (Germany, Italy, Spain, US) for some infection cases or deaths no age is available. We imputed the age for these cases using the observed age distribution of infections or deaths, respectively. If, instead, we remove these cases from analysis, we get very similar results.
 
+The data is provided in different age groups. The following age groups are used in the original data for both case counts and death counts:
+
+* China: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80+
 * France: 0-14, 15-44, 45-64, 65-74, 75+
 * Germany: 0-4, 5-14, 15-34, 35-59, 60-79, 80+  
 * Italy: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80-89, 90+
 * Spain: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80+
 * South Korea: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 69-69, 70-79, 80+
 * United States: 0-19, 20-44, 45-54, 55-64, 65-74, 75-84, 85+
+* United States (NY): 0-18, 18-44, 45-64, 65-74, 75+
 
-For the decomposition, the age groups have to match. This means that for some country comparisons age groups have to be aggregated. For instance, when comparing Germany with Italy, the data of both countries has to be aggregated to three age groups: below 60, 60-79, and 80 and older. In contrast, this is not necessary when comparing Spain and South Korea, and to a much lesser extent when comparing Italy with the latter two, as in that case only for Italy the two age categories 80-89 and 90+ have to be combined.
+For the decomposition, the age groups have to match. This is the case for China, Spain, South Korea, and Italy; in case of the latter the age categories 80-89 and 90+ have to be merged. The age groups provided for France, Germany, and the US are problematic, as they do not match the age groups of any other country. Aggregating the age groups, as for Italy, does not help, either. For instance, the age category of 15 years to 44 years cannot be created based on the German data. To deal with this issue, we adjusted the case counts and death counts for France, Germany, and the US using penalized splines [Rizzi].
 
 # 4 Results
 
-Results can be output using the provided R code. Some examples are provided here.
+## 4.1 Country comparisons
 
 * Germany vs Italy (March 19): The CFR for Germany is $0.4$ percent, while the CFR of Italy was around $8.6$ percent. The difference is thus around $8.2$ percentage points ($0.082$). $\alpha$ equals $0.037$ and $\delta$ amounts to $0.044$. Thus, the age component explains roughly 46% of the difference, while the mortality component explains 54% percent.
+
+## 4.2 Trends over time: The case of Italy
+
 * Italy (March 16) vs Italy (March 19): From March 16 2020 to March 19 the CFR in Italy increased by $1.8$ percentage points from $6.8$ percent to $8.6$ percent. $\alpha$ is about $-0.001$ and thus actually reducing the difference, albeit only to a small extent, while $\delta$ equals $0.019$. This means that around 92% of the change over time can be attributed to (increasing) mortality, while the age structure of cases only had a small effect but became more favorable; i.e., younger.
 
 # 5 Discussion
