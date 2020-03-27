@@ -30,7 +30,6 @@ dat %>%
   ggplot(mapping = aes(x = Age+7, y = ascfr, color = Date, group = interaction(Code)))+
   geom_line() +
   scale_y_log10() + 
-  ylim(1e-4,.6) +
   xlim(25,97) 
 
 library(colorspace)
