@@ -1,6 +1,6 @@
 Source notes for input data csv
 --------------------------------
-# Spain
+## Spain
 check here daily for updated documents:
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm)
 
@@ -20,13 +20,18 @@ ES.23.03.2020
 ES.22.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_53_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_53_COVID-19.pdf)
 
-# Canada
-(Canada 24.03.2020)
-CA24.03.2020
-Note: checked 25.03.2020
+## Canada
+
+Note: checked 25.03.2020, 27.03.2020
 [https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals/epidemiological-summary-covid-19-cases.html](https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals/epidemiological-summary-covid-19-cases.html)
 
-# Italy
+(Canada 24.03.2020)
+CA24.03.2020
+
+(Canada 26.03.2020)
+CA26.03.2020
+
+## Italy
 check here daily for updated Bollettino [https://www.epicentro.iss.it/coronavirus/sars-cov-2-sorveglianza-dati](https://www.epicentro.iss.it/coronavirus/sars-cov-2-sorveglianza-dati)
 
 (Italy 19.03.2020)
@@ -61,7 +66,7 @@ ITinfo26.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_26marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_26marzo%20ITA.pdf)
 
 
-# South Korea
+## South Korea
 (South Korea 17.03.2020)
 SK17.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578)
@@ -70,7 +75,7 @@ SK17.03.2020
 SK25.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
-# USA
+## USA
 add urls to check daily:
 
 NYC data check here: 
@@ -82,20 +87,20 @@ USA_NYC26.03.2020 (only cases, no deaths)
 US16.03.2020
 [https://www.cdc.gov/mmwr/volumes/69/wr/mm6912e2.htm?s_cid=mm6912e2_w#T1_down]
 
-# France
+## France
 add url to check daily
 
 (France 10.03.2020)
 FR10.03.2020
 [https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date]
 
-# China
+## China
 
 (China 11.02.2020)
 CN11.02.2020
 [http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51](http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51)
 
-# Germany
+## Germany
 
 (Germany 25.03.2020)
 DE25.03.2020
