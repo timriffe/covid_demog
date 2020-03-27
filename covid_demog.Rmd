@@ -2,7 +2,7 @@
 title: "Monitoring trends and differences in COVID-19 case fatality rates using decomposition methods: A demographic perspective"
 shorttitle: "Decomposing differences in COVID-19 case fatality rates"
 
-date: "26-March-2020"
+date: "27-March-2020"
 
 author: "Christian Dudel, Tim Riffe, Alyson van Raalte, Enrique Acosta, Mikko Myrskylä"
 
@@ -21,13 +21,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The novel Coronavirus disease 2019 (COVID-19), caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), has been spreading rapidly across the world, and on March 11 2020 was recognised as a pandemic by the World Health Organization.  
 
-COVID-19 outbreaks went along with mostly regular patterns of logarithmic increase of case counts, with a few notable execptions. The number of deaths associated with COVID-19, however, have evolved considerably less regularly, and case fatality rates (CFRs) differ substantially between countries [1]. 
+COVID-19 outbreaks went along with mostly regular patterns of logarithmic increase of case counts, with a few notable execptions. The number of deaths associated with COVID-19, however, have evolved considerably less regularly, and case fatality rates (CFRs) differ substantially between countries [Onder]. 
 
 For instance, as of March 24 2020, Germany had a total of around 27 thousand confirmed infections and 114 deaths, resulting in a CFR of around 0.4 percent. Italy, on the other hand, up to the same day, had close to 64 thousand cases of infection, around 6 thousand deaths, and a CFR of 9.5 percent. On March 16, Italy had roughly the same number of cases as Germany on March 24, and a CFR of 7.7 percent. Thus, the outbreak in Italy is going along with a much higher CFR, and Italys CFR increased over time. 
 
-What is driving differences and trends in the CFR is currently not well understood. On the one hand, a higher CFR could mean that the risk of dying of COVID-19 differs between countries or changes over time. On the other hand, it could also imply a less favorable composition of the infected population [1]. Specifically, the risk of dying of COVID-19 is well-documented to increase with age. Thus, if the population of infected individuals is older in one case than in another, then the CFR will be higher, even if the age-specific risk of dying is the same. 
+What is driving differences and trends in the CFR is currently not well understood. On the one hand, a higher CFR could mean that the risk of dying of COVID-19 differs between countries or changes over time. On the other hand, it could also imply a less favorable composition of the infected population [Onder]. Specifically, the risk of dying of COVID-19 is well-documented to increase with age. Thus, if the population of infected individuals is older in one case than in another, then the CFR will be higher, even if the age-specific risk of dying is the same. 
 
-Indeed, demographers have argued that age structure matters [2,3], and the age composition of the infected population has been suggested as a potential explanation of differences in CFRs [1]. So far, however, there have been no assessments of the impact of the age structure of cases of infections, and the literature only provided qualitative assessments of the age structure of different populations to judge the potential severity of COVID-19 outbreaks.
+Indeed, demographers have argued that age structure matters [Dowd,Kashnitsky], and the age composition of the infected population has been suggested as a potential explanation of differences in CFRs [Onder]. So far, however, there have been no assessments of the impact of the age structure of cases of infections, and the literature only provided qualitative assessments of the age structure of different populations to judge the potential severity of COVID-19 outbreaks.
 
 In this paper, we use a demographic decomposition technique to disentangle two potential drivers of differences and trends: (1) the age structure of infection cases and (2) age-specific CFRs. The approach allows to specifically quantify what proportion of a difference between two CFRs can be attributed to age structure and what proportion can be attributed to age-specific CFRs. All data that is required are case counts and death counts by age groups. 
 
@@ -48,7 +48,7 @@ This expression will be used in the decomposition approach described below.
 
 We want to decompose, or "explain", the difference between two CFRs, irrespective of whether they are for two different countries, or for the same country at two different points in time, or for different groups within a country, e.g., socio-economic groups. We will use $\textrm{CFR}_i$ and $\textrm{CFR}_j$ to distinguish the two CFRs, e.g., country $i$ and country $j$. Moreover, we write $P_{ia}$, $C_{ia}$, $P_{ja}$, and $C_{ja}$ for the underlying age compositions and age-specific CFRs; i.e., $\textrm{CFR}_i=\sum P_{ia} C_{ia}$.   
 
-Using a decomposition approach introduced by Kitagawa [4] we separate the difference between to CFRs into two distinct parts, $$\textrm{CFR}_i-\textrm{CFR}_j=\alpha + \delta,$$ where $\alpha$ captures the part of the difference between CFRs which is due to differences in the age composition of cases, and $\delta$ is due to differences in mortality. $\alpha$ is given by $$\alpha=0.5 \left(\textrm{CFR}_i-\sum P_{ja} C_{ia}+\sum P_{ia} C_{ja}-\textrm{CFR}_j \right),$$ while $\delta$ can be calculated as $$\delta=0.5 \left(\textrm{CFR}_i-\sum P_{ia} C_{ja}+\sum P_{ja} C_{ia}-\textrm{CFR}_j \right).$$ Note that the age groups for group $i$ and group $j$ need to be the same. If this is not the case in the raw data and, for instance, one country reports counts in 5-year age groups (0-4, 5-9, 10-14, 15-19, ...) and the other uses 10-year age groups (0-9, 10-19, ...), then the more finely grained data needs to be aggregated to match the coarser data.
+Using a decomposition approach introduced by Kitagawa [Kitagawa] we separate the difference between to CFRs into two distinct parts, $$\textrm{CFR}_i-\textrm{CFR}_j=\alpha + \delta,$$ where $\alpha$ captures the part of the difference between CFRs which is due to differences in the age composition of cases, and $\delta$ is due to differences in mortality. $\alpha$ is given by $$\alpha=0.5 \left(\textrm{CFR}_i-\sum P_{ja} C_{ia}+\sum P_{ia} C_{ja}-\textrm{CFR}_j \right),$$ while $\delta$ can be calculated as $$\delta=0.5 \left(\textrm{CFR}_i-\sum P_{ia} C_{ja}+\sum P_{ja} C_{ia}-\textrm{CFR}_j \right).$$ Note that the age groups for group $i$ and group $j$ need to be the same. If this is not the case in the raw data and, for instance, one country reports counts in 5-year age groups (0-4, 5-9, 10-14, 15-19, ...) and the other uses 10-year age groups (0-9, 10-19, ...), then the more finely grained data needs to be aggregated to match the coarser data.
 
 The intuition behind the formulas is as follows. The first two terms in brackets in the equation for $\alpha$ are $\textrm{CFR}_i-\sum P_{ja} C_{ia}$, or, replacing $\textrm{CFR}_i$ with its definition, $\sum P_{ia} C_{ia}-\sum P_{ja} C_{ia}$. The second sum in this expression captures how high the CFR would have been if group $i$ had the same age distribution of infections as group $j$. The difference to the actual CFR (the whole expression) then captures to what extent the CFR is higher than this hypothetical CFR because of the actually observed age distribution of cases. The third and the fourth term in brackets in the equation for $\alpha$ are following a similar logic, but using a different hypothetical comparison, asking how much the CFR of group $j$ would differ it if had the age distribution of group $i$. The formula for $\delta$ again follows a similar logic, but now replacing the age-specific CFRs instead of the age distribution.
 
@@ -67,7 +67,7 @@ We use data on cumulative infections and deaths for the following countries (in 
 * China, February 11 2020
 * France, March 15 2020
 * Germany, March 25 2020
-* Italy, March 16 2020 and March 26 2020
+* Italy, March 9, 16, 19, 23, 24, 25, 26 2020 
 * South Korea, March 26 2020
 * Spain, March 25 2020
 * United States, March 16 2020
@@ -88,21 +88,31 @@ The data is provided in different age groups. The following age groups are used 
 * United States: 0-19, 20-44, 45-54, 55-64, 65-74, 75-84, 85+
 * United States (NY): 0-18, 18-44, 45-64, 65-74, 75+
 
-For the decomposition, the age groups have to match. This is the case for China, Spain, South Korea, and Italy; in case of the latter the age categories 80-89 and 90+ have to be merged. The age groups provided for France, Germany, and the US are problematic, as they do not match the age groups of any other country. Aggregating the age groups, as for Italy, does not help, either. For instance, the age category of 15 years to 44 years cannot be created based on the German data. To deal with this issue, we adjusted the case counts and death counts for France, Germany, and the US using penalized splines [Rizzi].
+For the decomposition, the age groups have to match. This is the case for China, Spain, South Korea, and Italy; in case of the latter the age categories 80-89 and 90+ have to be merged. The age groups provided for France, Germany, and the US are problematic, as they do not match the age groups of any other country. Aggregating the age groups, as for Italy, does not help, either. For instance, the age category of 15 years to 44 years cannot be created based on the German data. To deal with this issue, we adjusted the case counts and death counts for France, Germany, and the US using a smoothing approach, whichis able to estimate counts using the same age groups as for Italy etc [Rizzi].
 
 # 4 Results
 
 ## 4.1 Country comparisons
 
-* Germany vs Italy (March 19): The CFR for Germany is $0.4$ percent, while the CFR of Italy was around $8.6$ percent. The difference is thus around $8.2$ percentage points ($0.082$). $\alpha$ equals $0.037$ and $\delta$ amounts to $0.044$. Thus, the age component explains roughly 46% of the difference, while the mortality component explains 54% percent.
+Table 1 shows results for cross-country comparisons using the data from South Korea (March 26) as a reference, with countries sorted by increasing CFR. We chose South Korea, as testing was extensive and the South Korean CFR should be a reliable estimate [reference]; moreover, the CFR was rather low, and comparisons will thus show what factor leads other countries to differ from this low CFR setting. In the supplementary materials we provide additional results using Germany and Italy as reference countries. 
+
+Based on the cumulative data up to March 26, South Korea had a CFR of 1.4 percent (top line of the table, column CFR). Only Germany and New York had lower CFRs of 0.5 percent and 1.2 percent, respectively. The difference to the South Korean CFR is shown in the fourth column of the table (South Korea minus Germany or NY), and is positive, indicating that the South Korean CFR is higher, albeit the difference is relatively small. The fifth and the sixth column of the table show the values of the $\alpha$-component (age distribution) and the $\delta$-component (age-specific fatality). The seventh and the eigth column of the table indicate the relative contributions of the components; in case of Germany and NY, the lower CFR compared to South Korea is largely due to better survival -- 74 percent for Germany, and 89 percent for New York, respectively. 
+
+All other countries (US total, China, France, Spain, Italy) have a higher CFR than South Korea, as indicated by the negative difference shown in column four of Table 1, and some of the differences are substantial. For instance, the French CFR is almost twice as high as the South Korean, while the Italian is almost seven times as high. 
+
+Interestingly, at first glance there is no consistent pattern in the (relative) contributions of the $\alpha$-component and the $\delta$-component. For instance, the order of magnitude of the CFR is roughly the same in China (2.3 percent) and in France (2.6 percent). The difference to the lower CFR in South Korea, however, in China is explained to 86 percent by worse case fatality, while in France it is largely due to the age structure (83 percent). The two cases with the highest CFRs -- Italy and Spain -- show relatively similar contributions of age distribution and case fatality to the difference to South Korea, with the $\alpha$-component explaining more than half of the difference, while the $\delta$-component explains slightly more than 40 percent. 
 
 ## 4.2 Trends over time: The case of Italy
 
-* Italy (March 16) vs Italy (March 19): From March 16 2020 to March 19 the CFR in Italy increased by $1.8$ percentage points from $6.8$ percent to $8.6$ percent. $\alpha$ is about $-0.001$ and thus actually reducing the difference, albeit only to a small extent, while $\delta$ equals $0.019$. This means that around 92% of the change over time can be attributed to (increasing) mortality, while the age structure of cases only had a small effect but became more favorable; i.e., younger.
+Table 2 shows how the CFR in Italy evolved from March 9 to March 26. The CFR of March 9 is used as a reference, and the decomposition shows which factor is driving the trend in the CFR. From beginning to end of the period under study the CFR more than doubled, from around 4.3 percent to 9.6 percent. This increase over time is largely driven by worsening fatality of COVID-19 -- more than 90 percent for all data points -- and changes in the age structure only play a minor role, moving to a more favorable age distribution and slightly counteracting the effect of worsening fatality.
 
 # 5 Discussion
 
-There are potential limitations to the approach discussed here. Most importantly, case counts as well as death counts depend on the testing regime, and may be affected by issues like reporting delays or censoring [5]. This means that, for instance, if our approach indicates that a large part of a difference is due to the age structure, this might actually only reflect differences in testing. To assess to what extent this is the case requires expertise about the contexts which are being compared. Results will be, however, correct in the sense that they point reseachers to the age structure of reported cases as causing differences; what causes the age structure to differ is another question not answered by our approach.
+Cross-country
+
+Trends
+
+There are potential limitations to the approach discussed here. Most importantly, case counts as well as death counts depend on the testing regime, and may be affected by issues like reporting delays or censoring [Lipsitch]. This means that, for instance, if our approach indicates that a large part of a difference is due to the age structure, this might actually only reflect differences in testing. To assess to what extent this is the case requires expertise about the contexts which are being compared. Results will be, however, correct in the sense that they point reseachers to the age structure of reported cases as causing differences; what causes the age structure to differ is another question not answered by our approach.
 
 Another caveat is that the choice of age groups will somewhat affect results. If age groups are chosen too wide it might hide actual differences. For instance, if all infected individuals above age 60 are summarized in one age group, then the proportion of this age group could be the same in two countries, while in one country the cases could tend to be in the lower part of the interval, while in the other most cases could be older. This could in turn affect the age-specific CFR, and it would reduce the $\alpha$-component and inflate the $\delta$-component. Analyses provided in the supplementary materials show, however, that the effect of such an aggregation bias is rather limited.
 
@@ -115,15 +125,17 @@ Decomposing differences in case fatality rates over time or between countries re
 
 # References
 
-[1] Onder, G., Rezza, G., Brusaferro, S. (2020): Case-Fatality Rate and Characteristics of Patients Dying in Relation to COVID-19 in Italy. Journal of the American Medical Association. https://doi.org/10.1001/jama.2020.4683 
+[Onder] Onder, G., Rezza, G., Brusaferro, S. (2020). Case-Fatality Rate and Characteristics of Patients Dying in Relation to COVID-19 in Italy. Journal of the American Medical Association. https://doi.org/10.1001/jama.2020.4683 
 
-[2] Dowd, J., Rotondi, V., Andriano, L., Brazel, D. M., Block, P., Ding, X.,  Liu, Y., Mills, M. (2020). Demographic science aids in understanding the spread and fatality rates of COVID-19. OSF Preprint. https://osf.io/se6wy/?view_only=c2f00dfe3677493faa421fc2ea38e295
+[Dowd] Dowd, J., Rotondi, V., Andriano, L., Brazel, D. M., Block, P., Ding, X.,  Liu, Y., Mills, M. (2020). Demographic science aids in understanding the spread and fatality rates of COVID-19. OSF Preprint. https://osf.io/se6wy/?view_only=c2f00dfe3677493faa421fc2ea38e295
 
-[3] Kashnitsky, I., Aburto, J. E. (2020). COVID-19 in unequally ageing European regions. OSF Preprint. https://doi.org/10.31219/osf.io/abx7s.
+[Kashnitsky] Kashnitsky, I., Aburto, J. E. (2020). COVID-19 in unequally ageing European regions. OSF Preprint. https://doi.org/10.31219/osf.io/abx7s.
 
-[4] Kitagawa, E. M. (1955). Components of a difference between two rates.Journal of theAmerican Statistical Association, 50:1168–1194.
+[Kitagawa] Kitagawa, E. M. (1955). Components of a difference between two rates. Journal of the American Statistical Association, 50:1168–1194.
 
-[5] Lipsitch M, Donnelly CA, Fraser C, Blake IM, Cori A, Dorigatti I, et al. (2015) Potential Biases in Estimating Absolute and Relative Case-Fatality Risks during Outbreaks. PLoS Negl Trop Dis 9(7): e0003846. https://doi.org/10.1371/journal.pntd.0003846
+[Lipsitch] Lipsitch M, Donnelly CA, Fraser C, Blake IM, Cori A, Dorigatti I, et al. (2015). Potential Biases in Estimating Absolute and Relative Case-Fatality Risks during Outbreaks. PLoS Negl Trop Dis 9(7): e0003846. https://doi.org/10.1371/journal.pntd.0003846
+
+[Rizzi] Rizzi, S., Gampe, J., Eilers, P. H. C. (2015). Efficient Estimation of Smooth Distributions From Coarsely Grouped Data. American Journal of Epidemiology 182(2): 138-147, https://doi.org/10.1093/aje/kwv020
 
 # Data sources
 
