@@ -6,7 +6,7 @@ dat %>%
   filter(Country == "Italy",
          Sex == "b") %>% 
   # doing the David Spiegelhalter trick of plotting on 7s
-  ggplot(mapping = aes(x = Age+7, y = ascfr, color = Date, by = as.factor(Date)))+
+  ggplot(mapping = aes(x = Age+7, y = ascfr, color = Date, group = as.factor(Date)))+
   geom_line() +
   scale_y_log10() + 
   ylim(1e-4,.3) +
@@ -33,4 +33,44 @@ dat %>%
   ylim(1e-4,.6) +
   xlim(25,97) 
 
+library(colorspace)
+# Spain both sexes
+dat %>% 
+  filter(Country == "Spain",
+         Sex == "m") %>% 
+  # doing the David Spiegelhalter trick of plotting on 7s
+  ggplot(mapping = aes(x = Age+7, y = ascfr, color = Date, group = interaction(Code))) +
+  geom_line() +
+  scale_y_log10() + 
+  ylim(1e-4,.5) +
+  xlim(25,97) 
 
+dat %>% 
+  filter(Country == "Spain",
+         Sex == "f") %>% 
+  # doing the David Spiegelhalter trick of plotting on 7s
+  ggplot(mapping = aes(x = Age+7, y = ascfr, color = Date, group = interaction(Code))) +
+  geom_line() +
+  scale_y_log10() + 
+  ylim(1e-4,.5) +
+  xlim(25,97) 
+
+# comparing one both-sex sample from each country
+
+codes <- c("ES25.03.2020","ITinfo26.03.2020","SK26.03.2020", "CN11.02.2020","FR15.03.2020","US16.03.2020","DE25.03.2020","NYC24.03.2020")
+
+dat %>% pull(Code) %>% unique()
+
+library(directlabels)
+require(scales)
+
+dat %>% 
+  filter(Sex == "b",
+         Code %in% codes,
+         Age >= 30) %>% 
+  ggplot(mapping = aes(x = Age+7, y = ascfr*1000, color = Country)) +
+  geom_line(size = 2) +
+ # xlim(25,97) +
+  geom_dl(aes(label=Country),method="first.points")+
+  scale_x_continuous(labels = scales::comma)+
+  scale_y_log10() 
