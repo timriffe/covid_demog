@@ -1,6 +1,7 @@
 library(here)
+source(here("R/02_data_prep.R"))
 
-
+# Italy time series both-sex, with China and USA on top
 dat %>% 
   filter(Country == "Italy",
          Sex == "b") %>% 
@@ -19,3 +20,17 @@ dat %>%
                    Country == "USA",
                    Sex == "b"),
             mapping=aes(x=Age+7, y=ascfr), color = "green",size=2)
+
+
+# Spain time series both-sex
+dat %>% 
+  filter(Country == "Spain",
+         Sex == "b") %>% 
+  # doing the David Spiegelhalter trick of plotting on 7s
+  ggplot(mapping = aes(x = Age+7, y = ascfr, color = Date, group = interaction(Code)))+
+  geom_line() +
+  scale_y_log10() + 
+  ylim(1e-4,.6) +
+  xlim(25,97) 
+
+
