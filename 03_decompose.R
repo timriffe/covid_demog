@@ -2,26 +2,26 @@
 library(here)
 source("R/02_data_prep.R")
 
-# pick a standard
+# decide some standard patterns
 
-ST <- dat %>% 
-  filter(Country == "China",
+SK <- dat %>% 
+  filter(Code == "SK25.03.2020",
+         Sex == "b")
+DE <- dat %>% 
+  filter(Code == "DE25.03.2020",
+         Sex == "b")
+IT <- dat %>% 
+  filter(Code == "ITinfo26.03.2020",
          Sex == "b")
 
+DecSK <- as.data.table(dat)[,
+                   kitagawa_cfr4(SK$Cases, SK$ascfr,Cases,ascfr),
+                   by=list(Country, Code, Date, Sex)]
 
- dat %>% 
-   filter(Country == "Italy",
-          Sex == "b") %>% 
-   # doing the David Spiegelhalter trick of plotting on 7s
-   ggplot(mapping = aes(x = Age+7, y = ascfr, color = Date, by = as.factor(Date)))+
-   geom_line() +
-   scale_y_log10() + 
-   ylim(1e-4,.3) +
-   xlim(25,97) + 
-   geom_line(ST,mapping=aes(x=Age+7, y=ascfr),color="black",size=2) + 
-   geom_line(filter(dat,
-                    Code == "SK26.03.2020",
-                    Sex == "b"),
-             mapping=aes(x=Age+7, y=ascfr), color = "red",size=2)
+DecDE <- as.data.table(dat)[,
+                   kitagawa_cfr4(DE$Cases, DE$ascfr,Cases,ascfr),
+                   by=list(Country, Code, Date, Sex)]
   
-
+DecIT <- as.data.table(dat)[,
+                   kitagawa_cfr4(IT$Cases, IT$ascfr,Cases,ascfr),
+                   by=list(Country, Code, Date, Sex)]

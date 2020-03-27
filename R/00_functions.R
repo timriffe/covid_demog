@@ -8,6 +8,7 @@ library(tidyverse)
 library(ungroup)
 library(DemoTools)
 library(lubridate)
+library(data.table)
 # 
 
 # --------------------------------
@@ -135,4 +136,23 @@ kitagawa_cfr3 <- function(c1, r1, c2, r2){
   Aa  <- sum((c1 - c2) * (r1 + r2) / 2)
   Bb  <- sum((r1 - r2) * (c1 + c2) / 2)
   list(Diff = Tot, AgeComp = Aa, RateComp = Bb)
+}
+
+wmean <- function(x,w){
+  sum(x*w)/sum(w)
+}
+
+# TR: this one returns more
+kitagawa_cfr4 <- function(c1, r1, c2, r2){
+  c1  <- c1 / sum(c1)
+  c2  <- c2 / sum(c2)
+  
+  Tot <- cfr2(c1, r1) - cfr2(c2, r2)
+  Aa  <- sum((c1 - c2) * (r1 + r2) / 2)
+  Bb  <- sum((r1 - r2) * (c1 + c2) / 2)
+  list(Diff = Tot, 
+       AgeComp = Aa,
+       RateComp = Bb, 
+       CFR1 = wmean(r1,c1), 
+       CFR2 = wmean(r2,c2))
 }
