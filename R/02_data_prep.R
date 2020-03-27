@@ -20,9 +20,9 @@ dat <- dat %>%
   unnest(cols = c()) %>% 
   # get back age-specific case fatality rates
   mutate(ascfr = Deaths / Cases,
-         ascfr = replace_na(ascfr, 0)) 
-
-  
+         ascfr = replace_na(ascfr, 0)) %>% 
+  ungroup() %>% 
+  mutate(Date = dmy(Date))
 
 # TR: for testing
 # .chunk <- dat %>% 

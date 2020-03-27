@@ -73,6 +73,12 @@ SK17.03.2020
 
 (South Korea 25.03.2020)
 SK25.03.2020
+-checked 26.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 26.03.2020)
+SK26.03.2020
+-checked 27.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 ## USA
