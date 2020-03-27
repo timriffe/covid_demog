@@ -100,6 +100,12 @@ add url to check daily
 FR10.03.2020
 [https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date]
 
+(France 24.03.2020)
+FR24.03.2020
+-checked 27.03.2020
+-(waiting to enter data)
+[https://www.santepubliquefrance.fr/content/download/237536/2535424](https://www.santepubliquefrance.fr/content/download/237536/2535424)
+
 ## China
 
 (China 11.02.2020)
