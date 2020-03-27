@@ -84,3 +84,12 @@ DecITtrend <- DecITtrend %>% rename(DiffITt=Diff,AgeCompITt=AgeComp,RateCompITt=
 
 # Sort data
 DecITtrend <- DecITtrend %>% arrange(Date)
+
+# Output
+library(writexl)
+
+write_xlsx(x=DecSK,
+           path="Output/Table1.xlsx")
+
+write_xlsx(x=DecITtrend,
+           path="Output/Table2.xlsx")
