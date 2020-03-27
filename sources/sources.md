@@ -99,8 +99,7 @@ USA_NYC26.03.2020 (only cases, no deaths)
 [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf)
 
 ### Washington State:
-WA26.03.2020 
-(checked 27.03.2020)
+WA26.03.2020 (checked 27.03.2020)
 [https://www.doh.wa.gov/Emergencies/Coronavirus](https://www.doh.wa.gov/Emergencies/Coronavirus)
 
 ### National
