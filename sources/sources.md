@@ -8,11 +8,9 @@ check here daily for updated documents:
 ES27.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_57_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_58_COVID-19.pdf)
 
-
 (Spain 26.03.2020)
 ES26.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_57_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_57_COVID-19.pdf)
-
 
 (Spain 25.03.2020)
 ES25.03.2020
@@ -97,6 +95,11 @@ SK25.03.2020
 (South Korea 26.03.2020)
 SK26.03.2020
 -checked 27.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 28.03.2020)
+SK28.03.2020
+-checked 28.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 ## USA
