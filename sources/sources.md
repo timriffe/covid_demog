@@ -128,9 +128,9 @@ FR10.03.2020
 
 (France 24.03.2020)
 FR24.03.2020
--checked 27.03.2020
--(waiting to enter data)
-[https://www.santepubliquefrance.fr/content/download/237536/2535424](https://www.santepubliquefrance.fr/content/download/237536/2535424)
+(deaths refer to in-hospital only)
+[https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-24-mars-2020](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-24-mars-2020)
+
 
 ## China
 
