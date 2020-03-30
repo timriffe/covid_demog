@@ -127,6 +127,11 @@ SK29.03.2020
 -checked 29.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
+(South Korea 30.03.2020)
+SK30.03.2020
+-checked 30.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
 ## USA
 add urls to check daily:
 
@@ -146,7 +151,9 @@ US16.03.2020
 [https://www.cdc.gov/mmwr/volumes/69/wr/mm6912e2.htm?s_cid=mm6912e2_w#T1_down]
 
 ## France
-add url to check daily
+check daily:
+(click on link POINT "HEBDOMADAIRE DÉTAILLÉ DU 24/03/2020")
+[https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde)
 
 (France 10.03.2020)
 FR10.03.2020
