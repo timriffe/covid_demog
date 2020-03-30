@@ -5,7 +5,7 @@ source("R/02_data_prep.R")
 # Case and death counts
 
 aggregate(Cases~Code,data=dat[dat$Sex=="b",],sum)
-aggregate(Deaths~Code,data=dat,sum)
+aggregate(Deaths~Code,data=dat[dat$Sex=="b",],sum)
 
 # decide some standard patterns
 
