@@ -94,6 +94,12 @@ write_xlsx(x=DecSK,
 write_xlsx(x=DecITtrend,
            path="Output/Table2.xlsx")
 
+write_xlsx(x=DecDE,
+           path="Output/AppendixTab1.xlsx")
+
+write_xlsx(x=DecIT,
+           path="Output/AppendixTab2.xlsx")
+
 
 # ----------------------------------------------
 # testing re AvR's comment:
