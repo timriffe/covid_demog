@@ -93,3 +93,45 @@ write_xlsx(x=DecSK,
 
 write_xlsx(x=DecITtrend,
            path="Output/Table2.xlsx")
+
+
+# ----------------------------------------------
+# testing re AvR's comment:
+#  We always use the same reference point (9 March). If we used 19 March, after 
+# which the CFR kept increasing, but not by as much relatively speaking would
+# our relative results change? i.e. how robust are our results to the choice 
+# of reference?
+
+do.this <- FALSE
+if (do.this){
+dat %>% 
+  filter(Country == "Italy") %>% 
+  pull(Code) %>% 
+  unique()
+
+
+ITtrend2 <- dat %>% 
+  filter(Code == "IT19.03.2020",
+         Sex == "b")
+
+DecITtrend <- as.data.table(dat)[,
+                                 kitagawa_cfr4(Cases,ascfr,ITtrend2$Cases, ITtrend2$ascfr),
+                                 by=list(Country, Code, Date, Sex)]
+
+# Select only Italy
+DecITtrend <- DecITtrend %>% filter(Country=="Italy" & Sex=="b") 
+
+# Only keep interesting variables
+DecITtrend <- DecITtrend %>% select(Country,Date,CFR1,Diff,AgeComp,RateComp)
+
+# Relative contributions
+DecITtrend <- DecITtrend %>% mutate(relAgeDE = abs(AgeComp)/(abs(AgeComp)+abs(RateComp)))
+DecITtrend <- DecITtrend %>% mutate(relRateDE = abs(RateComp)/(abs(AgeComp)+abs(RateComp)))
+
+# Rename
+DecITtrend <- DecITtrend %>% rename(DiffITt=Diff,AgeCompITt=AgeComp,RateCompITt=RateComp)
+
+# Sort data
+DecITtrend <- DecITtrend %>% arrange(Date)
+}
+
