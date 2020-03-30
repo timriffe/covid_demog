@@ -135,3 +135,4 @@ DecITtrend <- DecITtrend %>% rename(DiffITt=Diff,AgeCompITt=AgeComp,RateCompITt=
 DecITtrend <- DecITtrend %>% arrange(Date)
 }
 
+
