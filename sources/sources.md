@@ -87,6 +87,17 @@ ITinfo27.03.2020
 [approximate from infographic]
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_27marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_27marzo%20ITA.pdf)
 
+(Italy 28.03.2020)
+ITinfo28.03.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_28marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_28marzo%20ITA.pdf)
+
+(Italy 29.03.2020)
+ITinfo29.03.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_29marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_29marzo%20ITA.pdf)
+
+
 ## South Korea
 (South Korea 17.03.2020)
 SK17.03.2020
