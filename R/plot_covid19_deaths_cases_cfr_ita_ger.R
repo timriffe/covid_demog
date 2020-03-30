@@ -72,11 +72,11 @@ tx <- 6
 counts %>%
   ggplot(aes(date, val, col = country, linetype = type)) +
   geom_line(size = 1, alpha = .7) +
-  scale_y_log10(expand = c(0,0), labels = comma, 
+  scale_y_log10(expand = c(0,0), labels = scales::comma_format(accuracy = 1), 
                 breaks = c(1, 10, 100, 1000, 10000, 100000)) +
   scale_x_date(expand = c(0,0), date_breaks = "2 days", 
                labels=date_format("%b %d"),
-               limits = as.Date(c('2020-03-01','2020-04-4')))+
+               limits = as.Date(c('2020-03-01','2020-04-5')))+
   coord_cartesian(clip = "off", ylim = c(1, 300000)) +
   scale_colour_manual(values = c("black", "#2ca25f"))+
   geom_text_repel(data = labs, aes(date, val, label = country_count), nudge_x = 0.3, 
@@ -108,7 +108,7 @@ labs_cfrs <- cfrs %>%
 cfrs %>%
   ggplot(aes(date, cfr, col = country)) +
   geom_line(size = 1, alpha = .7) +
-  scale_y_continuous(expand = c(0,0), labels = comma,
+  scale_y_continuous(expand = c(0,0), labels = percent_format(accuracy = 2),
   breaks = seq(0, .12, .02)) +
   scale_x_date(expand = c(0,0), date_breaks = "2 days", 
                labels=date_format("%b %d"),
