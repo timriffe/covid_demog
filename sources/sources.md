@@ -133,6 +133,7 @@ USA_NYC26.03.2020 (only cases, no deaths)
 
 ### Washington State:
 WA26.03.2020 (checked 27.03.2020)
+WA29.03.2020 (checked 29.03.2020)
 [https://www.doh.wa.gov/Emergencies/Coronavirus](https://www.doh.wa.gov/Emergencies/Coronavirus)
 
 ### National
