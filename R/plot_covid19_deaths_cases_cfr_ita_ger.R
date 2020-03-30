@@ -55,19 +55,30 @@ corona_2 <- corona %>%
 counts <- corona_2 %>% 
   select(country, deaths, cases, date) %>% 
   gather(deaths, cases, key = type, value = val) %>% 
-  filter(val != 0) %>% 
+  filter(val != 0,
+         date <= as.Date(c('2020-03-29'))) %>% 
   mutate(country_count = paste0(country, "\n", type))
 
 col_country <- c("Italy" = "#2ca25f",
                  "Germany" = "black")
 
-setwd("C:/Users/kikep/Dropbox/covid19/CFR decomposition")
+
+
+cfrs <- corona_2 %>% 
+  select(country, cfr, date) %>% 
+  drop_na()
 
 labs <- counts %>%
   group_by(country_count) %>% 
   filter(date == max(date))
 
+labs_cfrs <- cfrs %>%
+  group_by(country) %>% 
+  filter(date == max(date))
+
 tx <- 6
+
+source(here("Figures/"))
 
 counts %>%
   ggplot(aes(date, val, col = country, linetype = type)) +
@@ -95,15 +106,8 @@ counts %>%
     axis.title.y = element_text(size = tx + 1)
   )
 
-ggsave("cases_deaths_ger_ita.jpg", width = 3, height = 3, dpi = 600)
+ggsave("figure1a.jpg", width = 3, height = 3, dpi = 600)
 
-cfrs <- corona_2 %>% 
-  select(country, cfr, date) %>% 
-  drop_na()
-
-labs_cfrs <- cfrs %>%
-  group_by(country) %>% 
-  filter(date == max(date))
 
 cfrs %>%
   ggplot(aes(date, cfr, col = country)) +
@@ -130,6 +134,6 @@ cfrs %>%
     axis.title.y = element_text(size = tx + 1)
   )
 
-ggsave("cfr_ger_ita.jpg", width = 3, height = 3, dpi = 600)
+ggsave("figure1b.jpg", width = 3, height = 3, dpi = 600)
 
 
