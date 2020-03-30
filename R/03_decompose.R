@@ -10,7 +10,7 @@ aggregate(Deaths~Code,data=dat[dat$Sex=="b",],sum)
 # decide some standard patterns
 
 DE <- dat %>% 
-  filter(Code == "DE25.03.2020",
+  filter(Code == "DE29.03.2020",
          Sex == "b")
 IT <- dat %>% 
   filter(Code == "ITinfo29.03.2020",
