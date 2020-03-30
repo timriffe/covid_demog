@@ -3,7 +3,8 @@
 source(("R/00_functions.R"))
 source(("R/01_input_data.R"))
 
-
+dat$Age    <- unlist(dat$Age)
+dat$AgeInt <- unlist(dat$AgeInt)
 
 # first, let's standardize age groups of deaths and cases.
 # 10-year age groups 0-90+

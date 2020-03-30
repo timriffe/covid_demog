@@ -32,10 +32,9 @@ redistribute_NAs <- function(.chunk){
 standardize_chunk <- function(.chunk, N = 10, OA = 90){
   
   n       <- nrow(.chunk)
-  nlast   <- .chunk %>% pull(AgeInt) %>% "[["(n)
-  x       <- .chunk %>% pull(Age) %>% unlist()
-  xi      <- .chunk %>% pull(AgeInt) %>% unlist()
-  
+  x       <- .chunk %>% pull(Age) %>% unlist() %>% as.integer()
+  xi      <- .chunk %>% pull(AgeInt) %>% unlist() %>% as.integer()
+  nlast   <- xi[n]
   # indicator
   isN     <- x %% N == 0 & xi == N & x < OA
   
