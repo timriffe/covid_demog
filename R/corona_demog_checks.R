@@ -63,3 +63,14 @@ SR_ES <- ES %>%
 rbind(SR_IT, SR_DE, SR_ES) %>% 
   ggplot(mapping = aes(x = Age10, y = PM, color = Country)) + 
   geom_line()
+
+# ------------------------
+# check rate of change over 10-years.
+IT <- readHMDweb("ITA", "bltper_1x10", us, pw)  
+DE <- readHMDweb("DEUTNP", "bltper_1x10", us, pw) 
+ES <- readHMDweb("ESP", "bltper_1x10", us, pw)
+SK <- readHMDweb("KOR", "bltper_1x10", us, pw)
+
+IT$mx[61]/IT$mx[51]
+IT$mx[71]/IT$mx[61]
+

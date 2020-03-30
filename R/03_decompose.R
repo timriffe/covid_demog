@@ -8,10 +8,10 @@ DE <- dat %>%
   filter(Code == "DE25.03.2020",
          Sex == "b")
 IT <- dat %>% 
-  filter(Code == "ITinfo26.03.2020",
+  filter(Code == "ITinfo29.03.2020",
          Sex == "b")
 SK <- dat %>% 
-  filter(Code == "SK26.03.2020",
+  filter(Code == "SK30.03.2020",
          Sex == "b")
 
 # Decompose
