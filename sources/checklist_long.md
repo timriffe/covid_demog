@@ -109,22 +109,22 @@ check here daily for updated Bollettino [https://www.epicentro.iss.it/coronaviru
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_28marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_28marzo%20ITA.pdf)
 
 (Italy 27.03.2020)
-- [ ] ITinfo27.03.2020
+- [x] ITinfo27.03.2020
 [approximate from infographic]
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_27marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_27marzo%20ITA.pdf)
 
 (Italy 26.03.2020)
-- [ ] ITinfo26.03.2020
+- [x] ITinfo26.03.2020
 [approximate from infographic]
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_26marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_26marzo%20ITA.pdf)
 
 (Italy 25.03.2020)
-- [ ] ITinfo25.03.2020
+- [x] ITinfo25.03.2020
 [approximate from infographic]
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_25marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_25marzo%20ITA.pdf)
 
 (Italy 24.03.2020)
-- [ ] ITinfo24.03.2020
+- [x] ITinfo24.03.2020
 [approximate from infographic]
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_24marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_24marzo%20ITA.pdf)
 
