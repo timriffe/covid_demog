@@ -161,15 +161,21 @@ add urls to check daily:
 
 ### NYC data check here: 
 USA_NYC24.03.2020 (cases and deaths)
+
 USA_NYC26.03.2020 (only cases, no deaths)
+
 [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf)
 
 ### Washington State:
+
 WA26.03.2020 (checked 27.03.2020)
+
 WA29.03.2020 (checked 29.03.2020)
+
 [https://www.doh.wa.gov/Emergencies/Coronavirus](https://www.doh.wa.gov/Emergencies/Coronavirus)
 
 ### National
+
 (United States 16.03.2020)
 US16.03.2020
 [https://www.cdc.gov/mmwr/volumes/69/wr/mm6912e2.htm?s_cid=mm6912e2_w#T1_down]
@@ -211,3 +217,7 @@ Deaths:
 (Germany 29.03.2020)
 DE29.03.2020
 [https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-29-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-29-de.pdf?__blob=publicationFile)
+
+(Germany 30.03.2020)
+DE30.03.2020
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-30-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-30-de.pdf?__blob=publicationFile)
