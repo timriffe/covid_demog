@@ -2,10 +2,15 @@
 library(here)
 source("R/02_data_prep.R")
 
+# Case and death counts
+
+aggregate(Cases~Code,data=dat[dat$Sex=="b",],sum)
+aggregate(Deaths~Code,data=dat[dat$Sex=="b",],sum)
+
 # decide some standard patterns
 
 DE <- dat %>% 
-  filter(Code == "DE25.03.2020",
+  filter(Code == "DE29.03.2020",
          Sex == "b")
 IT <- dat %>% 
   filter(Code == "ITinfo29.03.2020",
@@ -93,6 +98,12 @@ write_xlsx(x=DecSK,
 
 write_xlsx(x=DecITtrend,
            path="Output/Table2.xlsx")
+
+write_xlsx(x=DecDE,
+           path="Output/AppendixTab1.xlsx")
+
+write_xlsx(x=DecIT,
+           path="Output/AppendixTab2.xlsx")
 
 
 # ----------------------------------------------
