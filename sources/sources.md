@@ -61,6 +61,16 @@ R code to tabulate it here:
 ## Italy
 check here daily for updated Bollettino [https://www.epicentro.iss.it/coronavirus/sars-cov-2-sorveglianza-dati](https://www.epicentro.iss.it/coronavirus/sars-cov-2-sorveglianza-dati)
 
+### Bollettino (includes gender, exact counts)
+
+(Italy 30.03.2020)
+IT30.03.2020
+[https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_30-marzo%202020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_30-marzo%202020.pdf)
+
+(Italy 26.03.2020)
+IT26.03.2020
+[https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_26-marzo%202020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_26-marzo%202020.pdf)
+
 (Italy 19.03.2020)
 IT19.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_19-marzo%202020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_19-marzo%202020.pdf)
@@ -68,10 +78,6 @@ IT19.03.2020
 (Italy 16.03.2020)
 IT16.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_16%20marzo%202020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_16%20marzo%202020.pdf)
-
-(Italy 26.03.2020)
-IT26.03.2020
-[https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_26-marzo%202020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_26-marzo%202020.pdf)
 
 (Italy 23.03.2020)
 IT23.03.2020
@@ -81,41 +87,47 @@ IT23.03.2020
 IT09.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_09-marzo-2020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_09-marzo-2020.pdf)
 
-<<<<<<< HEAD
-(Italy 24.03.2020)
-ITinfo24.03.2020
-[approximate from infographic]
-[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_24marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_24marzo%20ITA.pdf)
+### Infographics (daily, exact deaths, rounded ASCFR)
 
-(Italy 25.03.2020)
-ITinfo25.03.2020
+(Italy 31.03.2020)
+ITinfo31.03.2020
 [approximate from infographic]
-[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_25marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_25marzo%20ITA.pdf)
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_31marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_31marzo%20ITA.pdf) 
 
-(Italy 26.03.2020)
-ITinfo26.03.2020
+(Italy 30.03.2020)
+ITinfo30.03.2020
 [approximate from infographic]
-[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_26marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_26marzo%20ITA.pdf)
-
-(Italy 27.03.2020)
-ITinfo27.03.2020
-[approximate from infographic]
-[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_27marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_27marzo%20ITA.pdf)
-
-(Italy 28.03.2020)
-ITinfo28.03.2020
-[approximate from infographic]
-[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_28marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_28marzo%20ITA.pdf)
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_30marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_30marzo%20ITA.pdf) 
 
 (Italy 29.03.2020)
 ITinfo29.03.2020
 [approximate from infographic]
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_29marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_29marzo%20ITA.pdf)
 
-(Italy 30.03.2020)
-ITinfo30.03.2020
+(Italy 28.03.2020)
+ITinfo28.03.2020
 [approximate from infographic]
-[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_30marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_30marzo%20ITA.pdf) 
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_28marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_28marzo%20ITA.pdf)
+
+(Italy 27.03.2020)
+ITinfo27.03.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_27marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_27marzo%20ITA.pdf)
+
+(Italy 26.03.2020)
+ITinfo26.03.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_26marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_26marzo%20ITA.pdf)
+
+(Italy 25.03.2020)
+ITinfo25.03.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_25marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_25marzo%20ITA.pdf)
+
+(Italy 24.03.2020)
+ITinfo24.03.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_24marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_24marzo%20ITA.pdf)
 
 ## South Korea
 
