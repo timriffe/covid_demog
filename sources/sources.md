@@ -198,7 +198,6 @@ check daily:
 (click on link POINT "HEBDOMADAIRE DÉTAILLÉ DU 24/03/2020")
 [https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde)
 
-# France
 check here for updated documents:
 [https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date](https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date)
 
