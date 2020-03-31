@@ -4,10 +4,13 @@ Source notes for input data csv
 check here daily for updated documents:
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm)
 
+(Spain 30.03.2020)
+ES30.03.2020
+[https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_61_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_61_COVID-19.pdf)
+
 (Spain 29.03.2020)
 ES29.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_60_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_60_COVID-19.pdf)
-
 
 (Spain 28.03.2020)
 ES28.03.2020
@@ -108,6 +111,10 @@ ITinfo29.03.2020
 [approximate from infographic]
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_29marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_29marzo%20ITA.pdf)
 
+(Italy 30.03.2020)
+ITinfo30.03.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_30marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_30marzo%20ITA.pdf) 
 
 ## South Korea
 (South Korea 17.03.2020)
