@@ -118,24 +118,18 @@ ITinfo30.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_30marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_30marzo%20ITA.pdf) 
 
 ## South Korea
-=======
-# South Korea
+
 check here daily for updated documents:
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
->>>>>>> 0014ecca3baa024bac45de874d35ac13e3af5e58
 (South Korea 17.03.2020)
 SK17.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578)
 
 (South Korea 25.03.2020)
 SK25.03.2020
-<<<<<<< HEAD
 -checked 26.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
-=======
-[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366636&tag=&nPage=2](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366636&tag=&nPage=2)
->>>>>>> 0014ecca3baa024bac45de874d35ac13e3af5e58
 
 (South Korea 26.03.2020)
 SK26.03.2020
