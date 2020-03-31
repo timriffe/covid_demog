@@ -48,6 +48,13 @@ CA24.03.2020
 (Canada 26.03.2020)
 CA26.03.2020
 
+
+Microdata available here:
+[https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310076701](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310076701)
+R code to tabulate it here:
+[https://gist.github.com/timriffe/56a1083e2b1a89dec474955e0d763d2e](https://gist.github.com/timriffe/56a1083e2b1a89dec474955e0d763d2e)
+-- checked 29.03.2020, not added to inputs, still lacking enough deaths.
+
 ## Italy
 check here daily for updated Bollettino [https://www.epicentro.iss.it/coronavirus/sars-cov-2-sorveglianza-dati](https://www.epicentro.iss.it/coronavirus/sars-cov-2-sorveglianza-dati)
 
