@@ -146,6 +146,11 @@ SK30.03.2020
 -checked 30.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
+(South Korea 31.03.2020)
+SK31.03.2020
+-checked 31.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
 ## USA
 add urls to check daily:
 
