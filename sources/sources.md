@@ -81,6 +81,7 @@ IT23.03.2020
 IT09.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_09-marzo-2020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_09-marzo-2020.pdf)
 
+<<<<<<< HEAD
 (Italy 24.03.2020)
 ITinfo24.03.2020
 [approximate from infographic]
@@ -117,14 +118,24 @@ ITinfo30.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_30marzo%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_30marzo%20ITA.pdf) 
 
 ## South Korea
+=======
+# South Korea
+check here daily for updated documents:
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+>>>>>>> 0014ecca3baa024bac45de874d35ac13e3af5e58
 (South Korea 17.03.2020)
 SK17.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578)
 
 (South Korea 25.03.2020)
 SK25.03.2020
+<<<<<<< HEAD
 -checked 26.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+=======
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366636&tag=&nPage=2](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366636&tag=&nPage=2)
+>>>>>>> 0014ecca3baa024bac45de874d35ac13e3af5e58
 
 (South Korea 26.03.2020)
 SK26.03.2020
@@ -169,20 +180,24 @@ WA29.03.2020 (checked 29.03.2020)
 US16.03.2020
 [https://www.cdc.gov/mmwr/volumes/69/wr/mm6912e2.htm?s_cid=mm6912e2_w#T1_down]
 
+
 ## France
 check daily:
 (click on link POINT "HEBDOMADAIRE DÉTAILLÉ DU 24/03/2020")
 [https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde)
 
+# France
+check here for updated documents:
+[https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date](https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date)
+
 (France 10.03.2020)
 FR10.03.2020
-[https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date]
+*this is a pdf without url, can be downloaded from the link above*
 
 (France 24.03.2020)
 FR24.03.2020
 (deaths refer to in-hospital only)
 [https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-24-mars-2020](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-24-mars-2020)
-
 
 ## China
 
