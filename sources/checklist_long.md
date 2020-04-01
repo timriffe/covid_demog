@@ -133,28 +133,9 @@ check here daily for updated Bollettino [https://www.epicentro.iss.it/coronaviru
 check here daily for updated documents:
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
-(South Korea 17.03.2020)
-- [ ] SK17.03.2020
-[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578)
-
-(South Korea 25.03.2020)
-- [ ] SK25.03.2020
--checked 26.03.2020
-[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
-
-(South Korea 26.03.2020)
-- [ ] SK26.03.2020
--checked 27.03.2020
-[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
-
-(South Korea 28.03.2020)
-- [ ] SK28.03.2020
--checked 28.03.2020
-[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
-
-(South Korea 29.03.2020)
-- [ ] SK29.03.2020
--checked 29.03.2020
+(South Korea 31.03.2020)
+- [ ] SK31.03.2020
+-checked 31.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 30.03.2020)
@@ -162,26 +143,46 @@ check here daily for updated documents:
 -checked 30.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
-(South Korea 31.03.2020)
-- [ ] SK31.03.2020
--checked 31.03.2020
+(South Korea 29.03.2020)
+- [ ] SK29.03.2020
+-checked 29.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 28.03.2020)
+- [ ] SK28.03.2020
+-checked 28.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 26.03.2020)
+- [ ] SK26.03.2020
+-checked 27.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 25.03.2020)
+- [ ] SK25.03.2020
+-checked 26.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 17.03.2020)
+- [ ] SK17.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578)
 
 ## USA
 add urls to check daily:
 
 ### NYC data check here: 
-- [ ] USA_NYC24.03.2020 (cases and deaths)
 
 - [ ] USA_NYC26.03.2020 (only cases, no deaths)
+
+- [ ] USA_NYC24.03.2020 (cases and deaths)
 
 [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf)
 
 ### Washington State:
 
-- [ ] WA26.03.2020 (checked 27.03.2020)
-
 - [ ] WA29.03.2020 (checked 29.03.2020)
+
+- [ ] WA26.03.2020 (checked 27.03.2020)
 
 [https://www.doh.wa.gov/Emergencies/Coronavirus](https://www.doh.wa.gov/Emergencies/Coronavirus)
 
@@ -201,14 +202,14 @@ check daily:
 check here for updated documents:
 [https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date](https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date)
 
-(France 10.03.2020)
-- [ ] FR10.03.2020
-*this is a pdf without url, can be downloaded from the link above*
-
 (France 24.03.2020)
 - [ ] FR24.03.2020
 (deaths refer to in-hospital only)
 [https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-24-mars-2020](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-24-mars-2020)
+
+(France 10.03.2020)
+- [ ] FR10.03.2020
+*this is a pdf without url, can be downloaded from the link above*
 
 ## China
 
@@ -217,21 +218,44 @@ check here for updated documents:
 [http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51](http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51)
 
 ## Germany
+(Germany 01.04.2020)
+- [x] DE01.04.2020
+
+Cases: (exact, need to save html artifacts)
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
+(Germany 31.03.2020)
+- [x] DE31.03.2020
+
+Deaths:
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-31-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-31-de.pdf?__blob=publicationFile)
+
+Cases: (rounded, screenshot, rescaled)
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
+(Germany 30.03.2020)
+- [x] DE30.03.2020 
+
+Cases: (rounded, screenshot)
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
+Deaths:
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-30-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-30-de.pdf?__blob=publicationFile)
+
+(Germany 29.03.2020)
+- [ ] DE29.03.2020
+
+Cases: (rounded, screenshot)
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
+Deaths:
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-29-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-29-de.pdf?__blob=publicationFile)
 
 (Germany 25.03.2020)
 - [ ] DE25.03.2020
-Cases:
+Cases: (rounded, screenshot)
 [https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
 Deaths: 
 [https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien)
   
-(Germany 29.03.2020)
-- [ ] DE29.03.2020
-[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-29-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-29-de.pdf?__blob=publicationFile)
-
-(Germany 30.03.2020)
-- [ ] DE30.03.2020
-[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-30-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-30-de.pdf?__blob=publicationFile)
-
-
-
