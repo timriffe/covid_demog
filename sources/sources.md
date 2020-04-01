@@ -186,6 +186,10 @@ WA29.03.2020 (checked 29.03.2020)
 
 [https://www.doh.wa.gov/Emergencies/Coronavirus](https://www.doh.wa.gov/Emergencies/Coronavirus)
 
+### Ohio:
+
+[https://coronavirus.ohio.gov/static/COVIDSummaryData.csv](https://coronavirus.ohio.gov/static/COVIDSummaryData.csv)
+
 ### National
 
 (United States 16.03.2020)
@@ -220,15 +224,41 @@ CN11.02.2020
 
 (Germany 25.03.2020)
 DE25.03.2020
-Cases:
+Cases: (rounded, screenshot)
 [https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
 Deaths: 
 [https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien)
   
 (Germany 29.03.2020)
 DE29.03.2020
+
+Cases: (rounded, screenshot)
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
+Deaths:
 [https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-29-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-29-de.pdf?__blob=publicationFile)
 
 (Germany 30.03.2020)
-DE30.03.2020
+DE30.03.2020 
+
+Cases: (rounded, screenshot)
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
+Deaths:
 [https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-30-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-30-de.pdf?__blob=publicationFile)
+
+(Germany 31.03.2020)
+DE31.03.2020
+
+Deaths:
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-31-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-31-de.pdf?__blob=publicationFile)
+
+Cases: (rounded, screenshot, rescaled)
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
+(Germany 01.04.2020)
+DE01.04.2020
+
+Cases: (exact, need to save html artifacts)
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
