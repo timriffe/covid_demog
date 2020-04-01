@@ -4,8 +4,12 @@ Source notes for input data csv
 check here daily for updated documents:
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm)
 
+(Spain 31.03.2020)
+ES31.03.2020
+[https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_62_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_62_COVID-19.pdf)
+
 (Spain 30.03.2020)
-ES30.03.2020
+ES30.03.2020  
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_61_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_61_COVID-19.pdf)
 
 (Spain 29.03.2020)
