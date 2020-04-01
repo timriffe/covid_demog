@@ -4,40 +4,45 @@ Source notes for input data csv
 check here daily for updated documents:
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm)
 
+
+(Spain 31.03.2020)
+- [ ] ES31.03.2020
+[https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_62_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_62_COVID-19.pdf)
+
 (Spain 30.03.2020)
-- [ ] ES30.03.2020
+- [x] ES30.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_61_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_61_COVID-19.pdf)
 
 (Spain 29.03.2020)
-- [ ] ES29.03.2020
+- [x] ES29.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_60_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_60_COVID-19.pdf)
 
 (Spain 28.03.2020)
-- [ ] ES28.03.2020
+- [x] ES28.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_59_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_59_COVID-19.pdf)
 
 (Spain 27.03.2020)
-- [ ] ES27.03.2020
+- [x] ES27.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_58_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_58_COVID-19.pdf)
 
 (Spain 26.03.2020)
-- [ ] ES26.03.2020
+- [x] ES26.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_57_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_57_COVID-19.pdf)
 
 (Spain 25.03.2020)
-- [ ] ES25.03.2020
+- [x] ES25.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_56_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_56_COVID-19.pdf)
 
 (Spain 24.03.2020)
-- [ ] ES24.03.2020
+- [x] ES24.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_55_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_55_COVID-19.pdf)
 
 (Spain 23.03.2020)
-- [ ] ES23.03.2020
+- [x] ES23.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_54_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_54_COVID-19.pdf)
 
 (Spain 22.03.2020)
-- [ ] ES22.03.2020
+- [x] ES22.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_53_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_53_COVID-19.pdf)
 
 ## Canada
