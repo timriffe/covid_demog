@@ -6,7 +6,7 @@ check here daily for updated documents:
 
 
 (Spain 31.03.2020)
-- [ ] ES31.03.2020
+- [x] ES31.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_62_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_62_COVID-19.pdf)
 
 (Spain 30.03.2020)
