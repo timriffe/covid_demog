@@ -138,28 +138,14 @@ ITinfo24.03.2020
 check here daily for updated documents:
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
-(South Korea 17.03.2020)
-SK17.03.2020
-[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578)
-
-(South Korea 25.03.2020)
-SK25.03.2020
--checked 26.03.2020
+(South Korea 01.04.2020)
+SK01.04.2020
+-checked 01.04.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
-(South Korea 26.03.2020)
-SK26.03.2020
--checked 27.03.2020
-[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
-
-(South Korea 28.03.2020)
-SK28.03.2020
--checked 28.03.2020
-[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
-
-(South Korea 29.03.2020)
-SK29.03.2020
--checked 29.03.2020
+(South Korea 31.03.2020)
+SK31.03.2020
+-checked 31.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 30.03.2020)
@@ -167,10 +153,30 @@ SK30.03.2020
 -checked 30.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
-(South Korea 31.03.2020)
-SK31.03.2020
--checked 31.03.2020
+(South Korea 29.03.2020)
+SK29.03.2020
+-checked 29.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 28.03.2020)
+SK28.03.2020
+-checked 28.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 26.03.2020)
+SK26.03.2020
+-checked 27.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 25.03.2020)
+SK25.03.2020
+-checked 26.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 17.03.2020)
+SK17.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578)
+
 
 ## USA
 add urls to check daily:
