@@ -199,9 +199,9 @@ USA_NYC26.03.2020 (only cases, no deaths)
 
 ### Washington State:
 
-WA26.03.2020 (checked 27.03.2020)
+WA25.03.2020 (checked 27.03.2020)
 
-WA29.03.2020 (checked 29.03.2020)
+WA27.03.2020 (checked 29.03.2020)
 
 WA31.03.2020 (checked 02.04.2020)
 
@@ -250,7 +250,7 @@ Cases: (exact, need to save html artifacts
 [https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
 
 Deaths: 
-[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-2-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-2-de.pdf?__blob=publicationFile)
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-02-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-02-de.pdf?__blob=publicationFile)
 
 (Germany 01.04.2020)
 DE01.04.2020

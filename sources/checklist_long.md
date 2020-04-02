@@ -176,17 +176,17 @@ add urls to check daily:
 
 ### NYC data check here: 
 
-- [ ] USA_NYC26.03.2020 (only cases, no deaths)
-
 - [ ] USA_NYC24.03.2020 (cases and deaths)
 
 [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf)
 
 ### Washington State:
 
-- [ ] WA29.03.2020 (checked 29.03.2020)
+- [x] WA25.03.2020 (checked 27.03.2020)
 
-- [ ] WA26.03.2020 (checked 27.03.2020)
+- [x] WA27.03.2020 (checked 29.03.2020)
+
+- [x] WA31.03.2020 (checked 02.04.2020)
 
 [https://www.doh.wa.gov/Emergencies/Coronavirus](https://www.doh.wa.gov/Emergencies/Coronavirus)
 
@@ -207,13 +207,16 @@ check here for updated documents:
 [https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date](https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date)
 
 (France 24.03.2020)
-- [ ] FR24.03.2020
+- [x] FR24.03.2020
 (deaths refer to in-hospital only)
 [https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-24-mars-2020](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-24-mars-2020)
 
+(France 16.03.2020)
+- [x] FR16.03.2020
+
 (France 10.03.2020)
-- [ ] FR10.03.2020
-*this is a pdf without url, can be downloaded from the link above*
+- [x] FR10.03.2020
+
 
 ## China
 
