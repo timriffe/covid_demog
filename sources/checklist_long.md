@@ -1,4 +1,5 @@
-Source notes for input data csv
+Coversion to long format is now complete. All data entry will continue using this format. 
+R code still needs to be adapted to this.
 --------------------------------
 ## Spain
 check here daily for updated documents:
@@ -252,7 +253,7 @@ Deaths:
 [https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-30-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-03-30-de.pdf?__blob=publicationFile)
 
 (Germany 29.03.2020)
-- [ ] DE29.03.2020
+- [x] DE29.03.2020
 
 Cases: (rounded, screenshot)
 [https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
