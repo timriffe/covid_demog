@@ -50,16 +50,16 @@ Note: checked 25.03.2020, 27.03.2020
 [https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals/epidemiological-summary-covid-19-cases.html](https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals/epidemiological-summary-covid-19-cases.html)
 
 (Canada 24.03.2020)
-- [ ] CA24.03.2020
+CA24.03.2020 [not transferred to long because no death info]
 
 (Canada 26.03.2020)
-- [ ] CA26.03.2020
+CA26.03.2020 [not transferred to long because no death info]
 
 Microdata available here:
 [https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310076701](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310076701)
 R code to tabulate it here:
 [https://gist.github.com/timriffe/56a1083e2b1a89dec474955e0d763d2e](https://gist.github.com/timriffe/56a1083e2b1a89dec474955e0d763d2e)
--- checked 29.03.2020, not added to inputs, still lacking enough deaths.
+-- checked 02.04.2020, not added to inputs, still lacking enough deaths.
 
 ## Italy
 check here daily for updated Bollettino [https://www.epicentro.iss.it/coronavirus/sars-cov-2-sorveglianza-dati](https://www.epicentro.iss.it/coronavirus/sars-cov-2-sorveglianza-dati)
@@ -176,7 +176,7 @@ add urls to check daily:
 
 ### NYC data check here: 
 
-- [ ] USA_NYC24.03.2020 (cases and deaths)
+- [x] USA_NYC24.03.2020 (cases and deaths)
 
 [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf)
 
@@ -193,7 +193,7 @@ add urls to check daily:
 ### National
 
 (United States 16.03.2020)
-- [ ] US16.03.2020
+- [x] US16.03.2020
 [https://www.cdc.gov/mmwr/volumes/69/wr/mm6912e2.htm?s_cid=mm6912e2_w#T1_down](https://www.cdc.gov/mmwr/volumes/69/wr/mm6912e2.htm?s_cid=mm6912e2_w#T1_down)
 
 
@@ -217,11 +217,10 @@ check here for updated documents:
 (France 10.03.2020)
 - [x] FR10.03.2020
 
-
 ## China
 
 (China 11.02.2020)
-- [ ] CN11.02.2020
+- [x] CN11.02.2020
 [http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51](http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51)
 
 ## Germany
