@@ -67,27 +67,27 @@ check here daily for updated Bollettino [https://www.epicentro.iss.it/coronaviru
 ### Bollettino (includes gender, exact counts)
 
 (Italy 30.03.2020)
-- [ ] IT30.03.2020
+- [x] IT30.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_30-marzo%202020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_30-marzo%202020.pdf)
 
 (Italy 26.03.2020)
-- [ ] IT26.03.2020
+- [x] IT26.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_26-marzo%202020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_26-marzo%202020.pdf)
 
+(Italy 23.03.2020)
+- [x] IT23.03.2020
+[https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_23-marzo%202020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_23-marzo%202020.pdf)
+
 (Italy 19.03.2020)
-- [ ] IT19.03.2020
+- [x] IT19.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_19-marzo%202020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_19-marzo%202020.pdf)
 
 (Italy 16.03.2020)
-- [ ] IT16.03.2020
+- [x] IT16.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_16%20marzo%202020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino%20sorveglianza%20integrata%20COVID-19_16%20marzo%202020.pdf)
 
-(Italy 23.03.2020)
-- [ ] IT23.03.2020
-[https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_23-marzo%202020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_23-marzo%202020.pdf)
-
 (Italy 09.03.2020)
-- [ ] IT09.03.2020
+- [x] IT09.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_09-marzo-2020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_09-marzo-2020.pdf)
 
 ### Infographics (daily, exact deaths, rounded ASCFR)
@@ -138,37 +138,37 @@ check here daily for updated documents:
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 31.03.2020)
-- [ ] SK31.03.2020
+- [x] SK31.03.2020
 -checked 31.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 30.03.2020)
-- [ ] SK30.03.2020
+- [x] SK30.03.2020
 -checked 30.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 29.03.2020)
-- [ ] SK29.03.2020
+- [x] SK29.03.2020
 -checked 29.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 28.03.2020)
-- [ ] SK28.03.2020
+- [x] SK28.03.2020
 -checked 28.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 26.03.2020)
-- [ ] SK26.03.2020
+- [x] SK26.03.2020
 -checked 27.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 25.03.2020)
-- [ ] SK25.03.2020
+- [x] SK25.03.2020
 -checked 26.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 17.03.2020)
-- [ ] SK17.03.2020
+- [x] SK17.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578)
 
 ## USA
