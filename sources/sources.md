@@ -4,6 +4,10 @@ Source notes for input data csv
 check here daily for updated documents:
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm)
 
+(Spain 01.04.2020)
+ES01.04.2020
+[https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_63_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_63_COVID-19.pdf)
+
 (Spain 31.03.2020)
 ES31.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_62_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_62_COVID-19.pdf)
@@ -93,6 +97,11 @@ IT09.03.2020
 
 ### Infographics (daily, exact deaths, rounded ASCFR)
 
+(Italy 01.04.2020)
+ITinfo01.04.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_1aprile%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_1aprile%20ITA.pdf) 
+  
 (Italy 31.03.2020)
 ITinfo31.03.2020
 [approximate from infographic]
@@ -194,6 +203,8 @@ WA26.03.2020 (checked 27.03.2020)
 
 WA29.03.2020 (checked 29.03.2020)
 
+WA31.03.2020 (checked 02.04.2020)
+
 [https://www.doh.wa.gov/Emergencies/Coronavirus](https://www.doh.wa.gov/Emergencies/Coronavirus)
 
 ### Ohio:
@@ -232,10 +243,19 @@ CN11.02.2020
 
 ## Germany
 
+(Germany 02.04.2020)
+DE02.04.2020
+
+Cases: (exact, need to save html artifacts
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
+Deaths: 
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-2-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-2-de.pdf?__blob=publicationFile)
+
 (Germany 01.04.2020)
 DE01.04.2020
 
-Cases: (exact, need to save html artifacts)
+Cases: (exact, need to save html artifacts
 [https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
 
 Deaths: 
