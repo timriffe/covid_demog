@@ -334,7 +334,8 @@ Deaths:
 
 Sufficient data, waiting to add
 
-(Netherlands )
+(Netherlands 29.03.2020)
+NL29.03.2020
 
 [https://www.rivm.nl/sites/default/files/2020-03/COVID-19_WebSite_rapport_20200329.pdf](https://www.rivm.nl/sites/default/files/2020-03/COVID-19_WebSite_rapport_20200329.pdf)
 
