@@ -76,7 +76,7 @@ check here daily for updated Bollettino [https://www.epicentro.iss.it/coronaviru
 ### Bollettino (includes gender, exact counts)
 
 (Italy 02.04.2020)
-- [ ] IT02.04.2020
+IT02.04.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_2-aprile-2020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_2-aprile-2020.pdf)
 
 (Italy 30.03.2020)
