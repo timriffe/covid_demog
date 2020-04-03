@@ -214,13 +214,17 @@ SK17.03.2020
 add urls to check daily:
 
 ### NYC data check here: 
-- [ ] [https://www1.nyc.gov/site/doh/covid/covid-19-data.page](https://www1.nyc.gov/site/doh/covid/covid-19-data.page)
+
+Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf)
+
+Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf)
+
+- [ ] USA_NYC02.04.2020 (cases and deaths)
 
 USA_NYC24.03.2020 (cases and deaths)
 
 USA_NYC26.03.2020 (only cases, no deaths)
 
-[https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf)
 
 ### Washington State:
 WA01.04.2020 (checked 03.04.2020)
@@ -338,6 +342,11 @@ Deaths:
 
 Check daily for Situation Reports:
 [https://www.rivm.nl/actuele-informatie-over-coronavirus/data](https://www.rivm.nl/actuele-informatie-over-coronavirus/data)
+
+(Netherlands 03.04.2020)
+NL03.04.2020
+
+[file:///home/tim/Downloads/Epidemiologische%20situatie%20COVID-19%20in%20Nederland%203%20april%202020%20(1).pdf](file:///home/tim/Downloads/Epidemiologische%20situatie%20COVID-19%20in%20Nederland%203%20april%202020%20(1).pdf)
 
 (Netherlands 29.03.2020)
 NL29.03.2020
