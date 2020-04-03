@@ -237,14 +237,19 @@ check daily:
 check here for updated documents:
 [https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date](https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date)
 
-(France 10.03.2020)
-FR10.03.2020
-*this is a pdf without url, can be downloaded from the link above*
+(France 02.04.2020)
+FR02.04.2020
+(deaths refer to in-hospital only)
+[https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-2-avril-2020](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-2-avril-2020)
 
 (France 24.03.2020)
 FR24.03.2020
 (deaths refer to in-hospital only)
 [https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-24-mars-2020](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-24-mars-2020)
+
+(France 10.03.2020)
+FR10.03.2020
+*this is a pdf without url, can be downloaded from the link above*
 
 ## China
 
@@ -307,3 +312,21 @@ Cases: (rounded, screenshot)
 
 Deaths: 
 [https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien)
+
+## Colombia
+
+Monitor url for increases in deaths. Single age and sex available for cases as of now.
+
+[https://infogram.com/covid-2019-ins-colombia-1hnq41zg9ord63z](https://infogram.com/covid-2019-ins-colombia-1hnq41zg9ord63z)
+
+## Estonia
+
+Monitor url for increases in deaths. Cases are given in 5-year age groups and sex.
+
+[https://www.terviseamet.ee/et/koroonaviirus/koroonakaart](https://www.terviseamet.ee/et/koroonaviirus/koroonakaart)
+
+## Iceland
+
+Cases by age and sex, but no mortality signal.
+
+[https://www.covid.is/data](https://www.covid.is/data)
