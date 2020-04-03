@@ -208,12 +208,13 @@ USA_NYC26.03.2020 (only cases, no deaths)
 [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf)
 
 ### Washington State:
+WA01.04.2020 (checked 03.04.2020)
 
-WA25.03.2020 (checked 27.03.2020)
+WA31.03.2020 (checked 02.04.2020)
 
 WA27.03.2020 (checked 29.03.2020)
 
-WA31.03.2020 (checked 02.04.2020)
+WA25.03.2020 (checked 27.03.2020)
 
 [https://www.doh.wa.gov/Emergencies/Coronavirus](https://www.doh.wa.gov/Emergencies/Coronavirus)
 
