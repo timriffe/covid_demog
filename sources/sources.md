@@ -105,7 +105,7 @@ IT09.03.2020
 
 ### Infographics (daily, exact deaths, rounded ASCFR)
 
-- [ ] (Italy 03.04.2020)
+(Italy 03.04.2020)
 ITinfo03.04.2020
 [approximate from infographic]
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_3aprile%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_3aprile%20ITA.pdf) 
