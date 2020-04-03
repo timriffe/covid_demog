@@ -71,6 +71,10 @@ check here daily for updated Bollettino [https://www.epicentro.iss.it/coronaviru
 
 ### Bollettino (includes gender, exact counts)
 
+(Italy 02.04.2020)
+- [ ] IT02.04.2020
+[https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_2-aprile-2020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_2-aprile-2020.pdf)
+
 (Italy 30.03.2020)
 IT30.03.2020
 [https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_30-marzo%202020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_30-marzo%202020.pdf)
@@ -97,7 +101,12 @@ IT09.03.2020
 
 ### Infographics (daily, exact deaths, rounded ASCFR)
 
-(Italy 02.04.2020)
+- [ ] (Italy 03.04.2020)
+ITinfo03.04.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_3aprile%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_3aprile%20ITA.pdf) 
+  
+- [ ] (Italy 02.04.2020)
 ITinfo02.04.2020
 [approximate from infographic]
 [https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_2aprile%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_2aprile%20ITA.pdf) 
@@ -201,6 +210,8 @@ SK17.03.2020
 add urls to check daily:
 
 ### NYC data check here: 
+- [ ] [https://www1.nyc.gov/site/doh/covid/covid-19-data.page](https://www1.nyc.gov/site/doh/covid/covid-19-data.page)
+
 USA_NYC24.03.2020 (cases and deaths)
 
 USA_NYC26.03.2020 (only cases, no deaths)
@@ -322,6 +333,8 @@ Deaths:
 ## Netherlands
 
 Sufficient data, waiting to add
+
+(Netherlands )
 
 [https://www.rivm.nl/sites/default/files/2020-03/COVID-19_WebSite_rapport_20200329.pdf](https://www.rivm.nl/sites/default/files/2020-03/COVID-19_WebSite_rapport_20200329.pdf)
 
