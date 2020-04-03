@@ -319,6 +319,12 @@ Cases: (rounded, screenshot)
 Deaths: 
 [https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien)
 
+## Netherlands
+
+Sufficient data, waiting to add
+
+[https://www.rivm.nl/sites/default/files/2020-03/COVID-19_WebSite_rapport_20200329.pdf](https://www.rivm.nl/sites/default/files/2020-03/COVID-19_WebSite_rapport_20200329.pdf)
+
 ## Colombia
 
 Monitor url for increases in deaths. Single age and sex available for cases as of now.
