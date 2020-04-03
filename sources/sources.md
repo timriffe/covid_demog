@@ -219,12 +219,9 @@ Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-su
 
 Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf)
 
-- [ ] USA_NYC02.04.2020 (cases and deaths)
+USA_NYC02.04.2020 (cases and deaths)
 
 USA_NYC24.03.2020 (cases and deaths)
-
-USA_NYC26.03.2020 (only cases, no deaths)
-
 
 ### Washington State:
 WA01.04.2020 (checked 03.04.2020)
