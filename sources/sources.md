@@ -97,6 +97,11 @@ IT09.03.2020
 
 ### Infographics (daily, exact deaths, rounded ASCFR)
 
+(Italy 02.04.2020)
+ITinfo02.04.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_2aprile%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_2aprile%20ITA.pdf) 
+  
 (Italy 01.04.2020)
 ITinfo01.04.2020
 [approximate from infographic]
@@ -145,6 +150,11 @@ ITinfo24.03.2020
 ## South Korea
 
 check here daily for updated documents:
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 02.04.2020)
+SK02.04.2020
+-checked 03.04.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 01.04.2020)
