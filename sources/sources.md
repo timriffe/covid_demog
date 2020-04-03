@@ -332,7 +332,8 @@ Deaths:
 
 ## Netherlands
 
-Sufficient data, waiting to add
+Check daily for Situation Reports:
+[https://www.rivm.nl/actuele-informatie-over-coronavirus/data](https://www.rivm.nl/actuele-informatie-over-coronavirus/data)
 
 (Netherlands 29.03.2020)
 NL29.03.2020
