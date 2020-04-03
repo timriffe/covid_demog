@@ -1,42 +1,38 @@
-# TR: THIS DOESN"T DO ANYTHING YET, I"LL GET BACK TO IT
-
 
 # creates object 'dat'
-source(here("R/01_input_data.R"))
+source(("R/00_functions.R"))
+source(("R/01_input_data.R"))
 
-head(dat)
+dat$Age    <- unlist(dat$Age)
+dat$AgeInt <- unlist(dat$AgeInt)
 
 # first, let's standardize age groups of deaths and cases.
-# to 5 or 10-year age groups 0-100.
+# 10-year age groups 0-90+
+# where needed, splitting is done using pclm()
 
-# 1) redistribute unknown cases and deaths.
+dat <- dat %>% 
+  # figure out which subsets have both cases and deaths
+  group_by(Country, Date, Code, Sex) %>% 
+  mutate(keep = all(!is.na(Cases)) & all(!is.na(Deaths))) %>% 
+  filter(keep) %>% 
+  # distribute, then standardize
+  do(redistribute_NAs(.chunk = .data)) %>% 
+  do(standardize_chunk(.chunk = .data, N = 10, OA = 90)) %>% 
+  unnest(cols = c()) %>% 
+  # get back age-specific case fatality rates
+  mutate(ascfr = Deaths / Cases,
+         ascfr = replace_na(ascfr, 0)) %>% 
+  ungroup() %>% 
+  mutate(Date = dmy(Date))
 
-redistribute_NAs <- function(.chunk){
-  if (any(.chunk$Age == "UNK")){
-  UNK <- .chunk %>% filter(Age == "UNK")
-  KN  <- .chunk %>% filter(Age != "UNK")
-  .chunk <- 
-    KN %>% mutate(Cases = Cases + (Cases / sum(Cases)) * UNK$Cases,
-                  Deaths = Deaths + (Deaths / sum(Deaths)) * UNK$Deaths)
-  }
-  .chunk
-}
+# TR: for testing
+# .chunk <- dat %>% 
+#   # figure out which subsets have both cases and deaths
+#   group_by(Country, Date, Code, Sex) %>% 
+#   mutate(keep = all(!is.na(Cases)) & all(!is.na(Deaths))) %>% 
+#   filter(keep) %>% 
+#   do(redistribute_NAs(.chunk = .data)) %>% 
+#   filter(Code == "ES25.03.2020" & Sex == "b")
 
-.data <- dat %>% 
-  filter(Country == "Spain",
-         Sex == "b",
-         Date == "24.03.2020")
-
-standardize_chunk <- function(.chunk, N = 10){
-  n <- nrow(.chunk)
-  pclm(x = .chunk$Age, 
-       y = .chunk$Cases, 
-       nlast = .chunk$AgeInt[n])
-}
-
-
-dat %>% 
-  nest(Code, Sex) %>% 
-  do(redistribute_NAs(.chunk = .data))
   
 
