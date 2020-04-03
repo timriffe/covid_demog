@@ -259,6 +259,12 @@ CN11.02.2020
 
 ## Germany
 
+(Germany 03.04.2020)
+DE03.04.2020
+
+Cases: (exact, need to save html artifacts
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
 (Germany 02.04.2020)
 DE02.04.2020
 
