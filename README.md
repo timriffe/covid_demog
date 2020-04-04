@@ -12,9 +12,8 @@ Mikko Myrskylä, myrskyla@demogr.mpg.de
 
 Max Planck Institute for Demographic Research, Rostock, Germany
 
-socarxiv: https://www.medrxiv.org/content/10.1101/2020.03.31.20048397v1
 
-medarxiv: https://www.medrxiv.org/content/10.1101/2020.03.31.20048397v1
+socarxiv: https://osf.io/preprints/socarxiv/j4a3d | medarxiv: https://www.medrxiv.org/content/10.1101/2020.03.31.20048397v1
 
 # Summary
 
