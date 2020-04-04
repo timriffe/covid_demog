@@ -4,7 +4,10 @@ Source notes for input data csv
 check here daily for updated documents:
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm)
 
-(Spain 03.04.2020)
+- [ ] ES07.04.2020
+- [ ] ES06.04.2020
+- [ ] ES05.04.2020
+- [ ] ES04.04.2020
 - [ ] ES03.04.2020
 
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_65_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_65_COVID-19.pdf)
@@ -264,6 +267,8 @@ Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-su
 ### Washington State:
 Check every 2-3 days. They don't update daily so far.
 [https://www.doh.wa.gov/Emergencies/Coronavirus](https://www.doh.wa.gov/Emergencies/Coronavirus)
+
+- [ ] USA_WA03.04.2020 (checked 04.04.2020)
 
 USA_WA01.04.2020 (checked 03.04.2020)
 
