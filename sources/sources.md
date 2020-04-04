@@ -229,19 +229,37 @@ SK17.03.2020
 add urls to check daily:
 
 ### NYC data check here: 
+(Note dates in file names are MMDDYYYY)
 
-Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf)
+- [ ] USA_NYC04.04.2020
+Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04042020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04042020-1.pdf)
+Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04042020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04042020-1.pdf)
 
-Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf)
-
-- [ ] Cases (not posting for some reason)
-- [x] Deaths 
-
-USA_NYC03.04.2020
+- [ ] USA_NYC03.04.2020
+Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04032020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04032020-1.pdf)
+Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04032020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04032020-1.pdf)
 
 USA_NYC02.04.2020
+Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04022020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04022020-1.pdf)
+Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04022020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04022020-1.pdf)
 
-USA_NYC24.03.2020
+- [ ] USA_NYC01.04.2020
+- [ ] USA_NYC31.03.2020
+- [ ] USA_NYC30.03.2020
+- [ ] USA_NYC29.03.2020
+- [ ] USA_NYC28.03.2020
+- [ ] USA_NYC27.03.2020
+- [ ] USA_NYC26.03.2020
+- [ ] USA_NYC25.03.2020
+- [ ] USA_NYC22.03.2020
+
+USA_NYC24.03.2020 
+Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-03242020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-03242020-1.pdf)
+Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-03242020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-03242020-1.pdf)
+
+USA_NYC23.03.2020
+Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-03232020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-03232020-1.pdf)
+Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-03232020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-02332020-1.pdf)
 
 ### Washington State:
 Check every 2-3 days. They don't update daily so far.
@@ -377,12 +395,12 @@ Check daily for Situation Reports:
 [https://www.rivm.nl/actuele-informatie-over-coronavirus/data](https://www.rivm.nl/actuele-informatie-over-coronavirus/data)
 
 (Netherlands 04.04.2020)
-- [ ] NL04.04.2020
+- [ ] NL04.04.2020 [https://www.rivm.nl/documenten/epidemiologische-situatie-covid-19-in-nederland-3-april-2020](https://www.rivm.nl/documenten/epidemiologische-situatie-covid-19-in-nederland-3-april-2020)
 
 (Netherlands 03.04.2020)
 NL03.04.2020
 
-[file:///home/tim/Downloads/Epidemiologische%20situatie%20COVID-19%20in%20Nederland%203%20april%202020%20(1).pdf](file:///home/tim/Downloads/Epidemiologische%20situatie%20COVID-19%20in%20Nederland%203%20april%202020%20(1).pdf)
+[https://www.rivm.nl/documenten/epidemiologische-situatie-covid-19-in-nederland-3-april-2020](https://www.rivm.nl/documenten/epidemiologische-situatie-covid-19-in-nederland-3-april-2020)
 
 (Netherlands 29.03.2020)
 NL29.03.2020
