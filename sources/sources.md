@@ -176,7 +176,7 @@ check here daily for updated documents:
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 03.04.2020)
-- [ ] SK03.04.2020
+SK03.04.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 02.04.2020)
