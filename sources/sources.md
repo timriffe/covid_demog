@@ -177,6 +177,7 @@ check here daily for updated documents:
 
 (South Korea 03.04.2020)
 SK03.04.2020
+-checked 04.04.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 02.04.2020)
@@ -233,7 +234,10 @@ Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-su
 
 Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths.pdf)
 
-- [ ] USA_NYC03.04.2020
+- [ ] Cases (not posting for some reason)
+- [x] Deaths 
+
+USA_NYC03.04.2020
 
 USA_NYC02.04.2020
 
@@ -296,12 +300,21 @@ CN11.02.2020
 ## Germany
 
 (Germany 03.04.2020)
+DE04.04.2020
+
+Cases: (exact, need to save html artifacts
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
+- [ ] Deaths:
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-04-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-04-de.pdf?__blob=publicationFile)
+
+(Germany 03.04.2020)
 DE03.04.2020
 
 Cases: (exact, need to save html artifacts
 [https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
 
-- [ ] Deaths: 
+- [ ] Deaths: (downloaded, need to enter)
 [https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-03-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-03-de.pdf?__blob=publicationFile)
 
 (Germany 02.04.2020)
