@@ -29,7 +29,7 @@
   dat_10 <- dat %>% filter(Code=="IT30.03.2020" & Sex=="b") 
 
   # Recode age variable to new age groups
-  dat_tmp <- dat_10 %>% mutate(Age = recode(Age, "0" ="0",
+  dat_tmp <- dat_10 %>% mutate(Age = recode(Age,"0" ="0",
                                                 "10"="0",
                                                 "20"="20",
                                                 "30"="20",
