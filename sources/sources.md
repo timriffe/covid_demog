@@ -4,6 +4,22 @@ Source notes for input data csv
 check here daily for updated documents:
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm)
 
+- [ ] ES07.04.2020
+- [ ] ES06.04.2020
+- [ ] ES05.04.2020
+- [ ] ES04.04.2020
+- [ ] ES03.04.2020
+
+[https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_65_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_65_COVID-19.pdf)
+
+(Spain 02.04.2020)
+ES02.04.2020
+[https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_64_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_64_COVID-19.pdf)
+
+(Spain 01.04.2020)
+ES01.04.2020
+[https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_63_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_63_COVID-19.pdf)
+
 (Spain 31.03.2020)
 ES31.03.2020
 [https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_62_COVID-19.pdf](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/documentos/Actualizacion_62_COVID-19.pdf)
@@ -55,7 +71,6 @@ CA24.03.2020
 (Canada 26.03.2020)
 CA26.03.2020
 
-
 Microdata available here:
 [https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310076701](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310076701)
 R code to tabulate it here:
@@ -65,7 +80,11 @@ R code to tabulate it here:
 ## Italy
 check here daily for updated Bollettino [https://www.epicentro.iss.it/coronavirus/sars-cov-2-sorveglianza-dati](https://www.epicentro.iss.it/coronavirus/sars-cov-2-sorveglianza-dati)
 
-### Bollettino (includes gender, exact counts)
+### Bollettino (includes gender, exact counts, twice per week)
+
+(Italy 02.04.2020)
+IT02.04.2020
+[https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_2-aprile-2020.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_2-aprile-2020.pdf)
 
 (Italy 30.03.2020)
 IT30.03.2020
@@ -93,6 +112,27 @@ IT09.03.2020
 
 ### Infographics (daily, exact deaths, rounded ASCFR)
 
+(Italy 04.04.2020)
+- [ ] ITinfo04.04.2020
+
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_4aprile%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_4aprile%20ITA.pdf)
+
+(Italy 03.04.2020)
+ITinfo03.04.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_3aprile%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_3aprile%20ITA.pdf) 
+  
+(Italy 02.04.2020)
+ITinfo02.04.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_2aprile%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_2aprile%20ITA.pdf) 
+  
+(Italy 01.04.2020)
+ITinfo01.04.2020
+[approximate from infographic]
+[https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_1aprile%20ITA.pdf](https://www.epicentro.iss.it/coronavirus/bollettino/Infografica_1aprile%20ITA.pdf) 
+  
 (Italy 31.03.2020)
 ITinfo31.03.2020
 [approximate from infographic]
@@ -138,33 +178,19 @@ ITinfo24.03.2020
 check here daily for updated documents:
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
-(South Korea 17.03.2020)
-SK17.03.2020
-[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578)
-
-(South Korea 25.03.2020)
-SK25.03.2020
--checked 26.03.2020
+(South Korea 03.04.2020)
+SK03.04.2020
+-checked 04.04.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
-(South Korea 26.03.2020)
-SK26.03.2020
--checked 27.03.2020
+(South Korea 02.04.2020)
+SK02.04.2020
+-checked 03.04.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
-(South Korea 28.03.2020)
-SK28.03.2020
--checked 28.03.2020
-[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
-
-(South Korea 29.03.2020)
-SK29.03.2020
--checked 29.03.2020
-[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
-
-(South Korea 30.03.2020)
-SK30.03.2020
--checked 30.03.2020
+(South Korea 01.04.2020)
+SK01.04.2020
+-checked 01.04.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
 (South Korea 31.03.2020)
@@ -172,27 +198,92 @@ SK31.03.2020
 -checked 31.03.2020
 [https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
 
+(South Korea 30.03.2020)
+SK30.03.2020
+-checked 30.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 29.03.2020)
+SK29.03.2020
+-checked 29.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 28.03.2020)
+SK28.03.2020
+-checked 28.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 26.03.2020)
+SK26.03.2020
+-checked 27.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 25.03.2020)
+SK25.03.2020
+-checked 26.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030)
+
+(South Korea 17.03.2020)
+SK17.03.2020
+[https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578](https://www.cdc.go.kr/board/board.es?mid=a30402000000&bid=0030&act=view&list_no=366578)
+
+
 ## USA
 add urls to check daily:
 
 ### NYC data check here: 
-USA_NYC24.03.2020 (cases and deaths)
+(Note dates in file names are MMDDYYYY)
 
-USA_NYC26.03.2020 (only cases, no deaths)
+- [ ] USA_NYC04.04.2020
+Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04042020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04042020-1.pdf)
+Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04042020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04042020-1.pdf)
 
-[https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary.pdf)
+- [ ] USA_NYC03.04.2020
+Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04032020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04032020-1.pdf)
+Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04032020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04032020-1.pdf)
+
+USA_NYC02.04.2020
+Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04022020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-04022020-1.pdf)
+Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04022020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-04022020-1.pdf)
+
+- [ ] USA_NYC01.04.2020
+- [ ] USA_NYC31.03.2020
+- [ ] USA_NYC30.03.2020
+- [ ] USA_NYC29.03.2020
+- [ ] USA_NYC28.03.2020
+- [ ] USA_NYC27.03.2020
+- [ ] USA_NYC26.03.2020
+- [ ] USA_NYC25.03.2020
+- [ ] USA_NYC22.03.2020
+
+USA_NYC24.03.2020 
+Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-03242020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-03242020-1.pdf)
+Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-03242020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-03242020-1.pdf)
+
+USA_NYC23.03.2020
+Deaths: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-03232020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-deaths-03232020-1.pdf)
+Cases: [https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-03232020-1.pdf](https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-daily-data-summary-02332020-1.pdf)
 
 ### Washington State:
-
-WA26.03.2020 (checked 27.03.2020)
-
-WA29.03.2020 (checked 29.03.2020)
-
+Check every 2-3 days. They don't update daily so far.
 [https://www.doh.wa.gov/Emergencies/Coronavirus](https://www.doh.wa.gov/Emergencies/Coronavirus)
+
+- [ ] USA_WA03.04.2020 (checked 04.04.2020)
+
+USA_WA01.04.2020 (checked 03.04.2020)
+
+USA_WA31.03.2020 (checked 02.04.2020)
+
+USA_WA27.03.2020 (checked 29.03.2020)
+
+USA_WA25.03.2020 (checked 27.03.2020)
 
 ### Ohio:
 
+Data requires tabulation:
 [https://coronavirus.ohio.gov/static/COVIDSummaryData.csv](https://coronavirus.ohio.gov/static/COVIDSummaryData.csv)
+
+- [ ] EA will do this
 
 ### National
 
@@ -209,14 +300,19 @@ check daily:
 check here for updated documents:
 [https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date](https://www.santepubliquefrance.fr/recherche/#search=COVID-19%20:%20point%20epidemiologique&sort=date)
 
-(France 10.03.2020)
-FR10.03.2020
-*this is a pdf without url, can be downloaded from the link above*
+(France 02.04.2020)
+- [ ] FR02.04.2020
+(deaths refer to in-hospital only)
+[https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-2-avril-2020](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-2-avril-2020)
 
 (France 24.03.2020)
 FR24.03.2020
 (deaths refer to in-hospital only)
 [https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-24-mars-2020](https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/documents/bulletin-national/covid-19-point-epidemiologique-du-24-mars-2020)
+
+(France 10.03.2020)
+FR10.03.2020
+*this is a pdf without url, can be downloaded from the link above*
 
 ## China
 
@@ -226,10 +322,37 @@ CN11.02.2020
 
 ## Germany
 
+(Germany 03.04.2020)
+DE04.04.2020
+
+Cases: (exact, need to save html artifacts
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
+- [ ] Deaths:
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-04-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-04-de.pdf?__blob=publicationFile)
+
+(Germany 03.04.2020)
+DE03.04.2020
+
+Cases: (exact, need to save html artifacts
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
+- [ ] Deaths: (downloaded, need to enter)
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-03-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-03-de.pdf?__blob=publicationFile)
+
+(Germany 02.04.2020)
+DE02.04.2020
+
+Cases: (exact, need to save html artifacts
+[https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
+
+Deaths: 
+[https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-02-de.pdf?__blob=publicationFile](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/2020-04-02-de.pdf?__blob=publicationFile)
+
 (Germany 01.04.2020)
 DE01.04.2020
 
-Cases: (exact, need to save html artifacts)
+Cases: (exact, need to save html artifacts
 [https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4)
 
 Deaths: 
@@ -270,3 +393,41 @@ Cases: (rounded, screenshot)
 
 Deaths: 
 [https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Todesf%C3%A4lle_mit_Einzelangaben_laut_Medien)
+
+## Netherlands
+
+Check daily for Situation Reports:
+[https://www.rivm.nl/actuele-informatie-over-coronavirus/data](https://www.rivm.nl/actuele-informatie-over-coronavirus/data)
+
+(Netherlands 04.04.2020)
+- [ ] NL04.04.2020 [https://www.rivm.nl/documenten/epidemiologische-situatie-covid-19-in-nederland-3-april-2020](https://www.rivm.nl/documenten/epidemiologische-situatie-covid-19-in-nederland-3-april-2020)
+
+(Netherlands 03.04.2020)
+NL03.04.2020
+
+[https://www.rivm.nl/documenten/epidemiologische-situatie-covid-19-in-nederland-3-april-2020](https://www.rivm.nl/documenten/epidemiologische-situatie-covid-19-in-nederland-3-april-2020)
+
+(Netherlands 29.03.2020)
+NL29.03.2020
+
+[https://www.rivm.nl/sites/default/files/2020-03/COVID-19_WebSite_rapport_20200329.pdf](https://www.rivm.nl/sites/default/files/2020-03/COVID-19_WebSite_rapport_20200329.pdf)
+
+## Colombia
+
+Monitor url for increases in deaths. Single age and sex available for cases as of now.
+
+[https://infogram.com/covid-2019-ins-colombia-1hnq41zg9ord63z](https://infogram.com/covid-2019-ins-colombia-1hnq41zg9ord63z)
+
+- [ ] EA will check here
+
+## Estonia
+
+Monitor url for increases in deaths. Cases are given in 5-year age groups and sex.
+
+[https://www.terviseamet.ee/et/koroonaviirus/koroonakaart](https://www.terviseamet.ee/et/koroonaviirus/koroonakaart)
+
+## Iceland
+
+Cases by age and sex, but no mortality signal.
+
+[https://www.covid.is/data](https://www.covid.is/data)

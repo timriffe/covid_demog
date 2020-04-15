@@ -12,6 +12,9 @@ Mikko Myrskylä, myrskyla@demogr.mpg.de
 
 Max Planck Institute for Demographic Research, Rostock, Germany
 
+
+socarxiv: https://osf.io/preprints/socarxiv/j4a3d | medarxiv: https://www.medrxiv.org/content/10.1101/2020.03.31.20048397v1
+
 # Summary
 
 COVID-19 has been spreading rapidly across the world. The case fatality rates (CFRs) associated with COVID-19 outbreaks in different countries have, however, varied significantly. Moreover, the CFR of a country can change considerably over time as the disease spreads. What is driving differences in the CFR between countries and changes over time is currently not well understood. 
