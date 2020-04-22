@@ -106,7 +106,7 @@ counts %>%
     axis.title.y = element_text(size = tx + 1)
   )
 
-ggsave("Output/figure1a.jpg", width = 3, height = 3, dpi = 600)
+ggsave("Output/figure1a.jpg", width = 4.975, height = 4.975, dpi = 600)
 
 
 cfrs %>%
@@ -134,6 +134,6 @@ cfrs %>%
     axis.title.y = element_text(size = tx + 1)
   )
 
-ggsave("Output/figure1b.jpg", width = 3, height = 3, dpi = 600)
+ggsave("Output/figure1b.jpg", width = 4.975, height = 4.975, dpi = 600)
 
 
