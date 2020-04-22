@@ -27,8 +27,8 @@
   dat$Date <- as.Date(dat$Date,format="%d.%m.%Y")
 
   # Restrict to countries of interest
-  countrylist <-c("Germany","Italy","China","SouthKorea","Spain","USA")
-  regionlist <- c("All","NYC")
+  countrylist <- c("Germany","Italy","China","SouthKorea","Spain","USA")
+  regionlist  <- c("All","NYC")
   dat <- dat %>% filter(Country %in% countrylist) %>%
                  filter(Region %in% regionlist)
   
@@ -36,24 +36,24 @@
   dat <- dat %>% mutate(Tests=NULL)
   
   
-### Aggregate German data #####################################################
-  
-  # German subset
-  Germandat <- dat %>% filter(Country=="Germany")
-  
-  # Case coutns
-  Gcases    <- aggregate(Cases~Country+Region+Code+Date+Age+AgeInt,data=Germandat,sum)
-  
-  # Death counts
-  Gdeaths   <- aggregate(Deaths~Country+Region+Code+Date+Age+AgeInt,data=Germandat,sum)
-  
-  # Combine, add missing variables
-  Germandat <- merge(Gcases,Gdeaths)
-  Germandat$Sex <- "b"
-  
-  # Append
-  dat <- rbind(dat,Germandat)
-  
+# ### Aggregate German data #####################################################
+#   
+#   # German subset
+#   Germandat <- dat %>% filter(Country=="Germany")
+#   
+#   # Case coutns
+#   Gcases    <- aggregate(Cases~Country+Region+Code+Date+Age+AgeInt,data=Germandat,sum)
+#   
+#   # Death counts
+#   Gdeaths   <- aggregate(Deaths~Country+Region+Code+Date+Age+AgeInt,data=Germandat,sum)
+#   
+#   # Combine, add missing variables
+#   Germandat <- merge(Gcases,Gdeaths)
+#   Germandat$Sex <- "b"
+#   
+#   # Append
+#   dat <- rbind(dat,Germandat)
+#   
   
 ### Get (old) French data #####################################################
   
@@ -108,7 +108,7 @@
   
   # Decide some reference patterns (For main text: SK)
   DE <- dat %>% 
-    filter(Code == "DE14.04.2020",
+    filter(Code == "DE20.04.2020",
            Sex == "b")
   IT <- dat %>% 
     filter(Code == "ITinfo17.04.2020",
