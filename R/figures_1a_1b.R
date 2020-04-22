@@ -56,7 +56,7 @@ counts <- corona_2 %>%
   select(country, deaths, cases, date) %>% 
   gather(deaths, cases, key = type, value = val) %>% 
   filter(val != 0,
-         date <= as.Date(c('2020-04-21'))) %>% 
+         date <= as.Date(c('2020-04-20'))) %>% 
   mutate(country_count = paste0(country, "\n", type))
 
 col_country <- c("Italy" = "#2ca25f",
