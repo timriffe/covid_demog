@@ -19,7 +19,7 @@
 ### Load and edit data ########################################################
 
   # Load CSV file
-  source <- "C:/Users/Christian/Documents/covid_age/Data/"
+  source <- "https://raw.githubusercontent.com/timriffe/covid_age/master/Data/"
   dat <- read.csv(paste0(source,"Output_10.csv")
                   ,sep=",",header=T,stringsAsFactors=F)
   
@@ -35,25 +35,9 @@
   # Remove Tests variable
   dat <- dat %>% mutate(Tests=NULL)
   
-  
-# ### Aggregate German data #####################################################
-#   
-#   # German subset
-#   Germandat <- dat %>% filter(Country=="Germany")
-#   
-#   # Case coutns
-#   Gcases    <- aggregate(Cases~Country+Region+Code+Date+Age+AgeInt,data=Germandat,sum)
-#   
-#   # Death counts
-#   Gdeaths   <- aggregate(Deaths~Country+Region+Code+Date+Age+AgeInt,data=Germandat,sum)
-#   
-#   # Combine, add missing variables
-#   Germandat <- merge(Gcases,Gdeaths)
-#   Germandat$Sex <- "b"
-#   
-#   # Append
-#   dat <- rbind(dat,Germandat)
-#   
+  # Drop if no cases/Deaths
+  dat <- na.omit(dat)
+   
   
 ### Get (old) French data #####################################################
   
@@ -117,8 +101,6 @@
     filter(Code == "KR19.04.2020",
            Sex == "b")
   
-  kitagawa_cfr4(IT$Cases, IT$ascfr,SK$Cases,SK$ascfr)
-  
   # Decompose
   DecDE <- as.data.table(dat)[,
                               kitagawa_cfr4(DE$Cases, DE$ascfr,Cases,ascfr),
@@ -130,21 +112,18 @@
   
   DecSK <- as.data.table(dat)[,
                               kitagawa_cfr4(SK$Cases, SK$ascfr,Cases,ascfr),
-                              by=list(Country, Code, Date, Sex)]
-  
-  # Omit missing rows
-  DecSK[1:20,]
+                              by=list(Country, Code, Date, Sex,Region)]
   
   # Select only most recent date, both genders combined
   
-  DecDE <- DecDE %>% filter(Sex=="b") %>% group_by(Country) %>% slice(which.max(Date))
-  DecIT <- DecIT %>% filter(Sex=="b") %>% group_by(Country) %>% slice(which.max(Date))
-  DecSK <- DecSK %>% filter(Sex=="b") %>% group_by(Country) %>% slice(which.max(Date))
+  DecDE <- DecDE %>% filter(Sex=="b") %>% group_by(Country,Region) %>% slice(which.max(Date))
+  DecIT <- DecIT %>% filter(Sex=="b") %>% group_by(Country,Region) %>% slice(which.max(Date))
+  DecSK <- DecSK %>% filter(Sex=="b") %>% group_by(Country,Region) %>% slice(which.max(Date))
   
   # Drop unnecessary variables
-  DecDE <- DecDE %>% select(Country,Date,CFR2,Diff,AgeComp,RateComp)
-  DecIT <- DecIT %>% select(Country,Date,CFR2,Diff,AgeComp,RateComp)
-  DecSK <- DecSK %>% select(Country,Date,CFR2,Diff,AgeComp,RateComp)
+  DecDE <- DecDE %>% select(Country,Region,Date,CFR2,Diff,AgeComp,RateComp)
+  DecIT <- DecIT %>% select(Country,Region,Date,CFR2,Diff,AgeComp,RateComp)
+  DecSK <- DecSK %>% select(Country,Region,Date,CFR2,Diff,AgeComp,RateComp)
   
   # Calculate relative contributions
   DecDE <- DecDE %>% mutate(relAgeDE = abs(AgeComp)/(abs(AgeComp)+abs(RateComp)))
