@@ -61,7 +61,7 @@
   
   # Decide some reference patterns (For main text: SK)
   DE <- dat %>% 
-    filter(Code == "DE22.04.2020",
+    filter(Code == "DE_22.04.2020",
            Sex == "b")
   IT <- dat %>% 
     filter(Code == "ITinfo22.04.2020",
