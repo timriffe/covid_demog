@@ -20,7 +20,7 @@
 
   # Load CSV file
   source <- "https://raw.githubusercontent.com/timriffe/covid_age/master/Data/"
-  dat <- read.csv(paste0(source,"Output_10.csv")
+  dat <- read.csv(paste0(source,"Output_5.csv")
                   ,sep=",",header=T,stringsAsFactors=F)
   
   # Set Date as date
@@ -37,40 +37,10 @@
   
   # Drop if no cases/Deaths
   dat <- na.omit(dat)
-   
   
-### Get (old) French data #####################################################
-  
-  # Source
-  ss  <- "https://docs.google.com/spreadsheets/d/1LdMsCq7JAgeWpJ-veobTDTzeZ9A3WIAx-ghjF49JDGE"
-  
-  # Read
-  frdat <- sheets_read(ss, skip =1)
-  
-  # Only select France
-  frdat <- frdat %>% filter(Country=="France")
-  
-  # Change format of some variables
-  frdat$Age    <- unlist(frdat$Age)
-  frdat$AgeInt <- unlist(frdat$AgeInt)
-  
-  # Splitting with PCLM
-  frdat <- frdat %>% 
-    # figure out which subsets have both cases and deaths
-    group_by(Country, Date, Code, Sex) %>% 
-    mutate(keep = all(!is.na(Cases)) & all(!is.na(Deaths))) %>% 
-    filter(keep) %>% 
-    # distribute, then standardize
-    do(redistribute_NAs(.chunk = .data)) %>% 
-    do(standardize_chunk(.chunk = .data, N = 10, OA = 100)) %>% 
-    unnest(cols = c()) %>% 
-    # Ungroup
-    ungroup() %>% 
-    mutate(Date = dmy(Date))
-  
-  # Append to other data
-  frdat$Region <- "All"
-  dat <- rbind(dat,frdat)
+  # Latest date: April 22
+  dat <- dat %>% filter(Date<="2020-04-22")
+
 
   
 ### Numbers for Table 1 #######################################################
@@ -92,13 +62,13 @@
   
   # Decide some reference patterns (For main text: SK)
   DE <- dat %>% 
-    filter(Code == "DE20.04.2020",
+    filter(Code == "DE22.04.2020",
            Sex == "b")
   IT <- dat %>% 
-    filter(Code == "ITinfo17.04.2020",
+    filter(Code == "ITinfo22.04.2020",
            Sex == "b")
   SK <- dat %>% 
-    filter(Code == "KR19.04.2020",
+    filter(Code == "KR22.04.2020",
            Sex == "b")
   
   # Decompose
@@ -181,10 +151,10 @@
   library(writexl)
   
   write_xlsx(x=DecSK,
-             path="Output/Table1.xlsx")
+             path="Output/Table2.xlsx")
   
   write_xlsx(x=DecITtrend,
-             path="Output/Table2.xlsx")
+             path="Output/Table3.xlsx")
   
   write_xlsx(x=DecDE,
              path="Output/AppendixTab1.xlsx")
