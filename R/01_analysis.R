@@ -1,8 +1,9 @@
 ### Monitoring trends and differences in COVID-19 case fatality  ##############
 ### rates using decomposition methods: A demographic perspective ##############
  
+  ### File 2 of 2
 
-  ### Last updated: 2020-04-21 13:55:58 CEST
+  ### Last updated: 2020-04-28 13:22:10 CEST
 
   ### Contact:
   ### riffe@demogr.mpg.de
@@ -13,14 +14,13 @@
 ### Load functions & packages #################################################
 
   source(("R/00_functions.R"))
-  library(googlesheets4)
 
-  
+
 ### Load and edit data ########################################################
 
   # Load CSV file
   source <- "https://raw.githubusercontent.com/timriffe/covid_age/master/Data/"
-  dat <- read.csv(paste0(source,"Output_5.csv")
+  dat <- read.csv(paste0(source,"Output_10.csv")
                   ,sep=",",header=T,stringsAsFactors=F)
   
   # Set Date as date
@@ -40,7 +40,6 @@
   
   # Latest date: April 22
   dat <- dat %>% filter(Date<="2020-04-22")
-
 
   
 ### Numbers for Table 1 #######################################################
@@ -73,15 +72,15 @@
   
   # Decompose
   DecDE <- as.data.table(dat)[,
-                              kitagawa_cfr4(DE$Cases, DE$ascfr,Cases,ascfr),
+                              kitagawa_cfr(DE$Cases, DE$ascfr,Cases,ascfr),
                               by=list(Country, Code, Date, Sex, Region)]
   
   DecIT <- as.data.table(dat)[,
-                              kitagawa_cfr4(IT$Cases, IT$ascfr,Cases,ascfr),
+                              kitagawa_cfr(IT$Cases, IT$ascfr,Cases,ascfr),
                               by=list(Country, Code, Date, Sex,Region)]
   
   DecSK <- as.data.table(dat)[,
-                              kitagawa_cfr4(SK$Cases, SK$ascfr,Cases,ascfr),
+                              kitagawa_cfr(SK$Cases, SK$ascfr,Cases,ascfr),
                               by=list(Country, Code, Date, Sex,Region)]
   
   # Select only most recent date, both genders combined
@@ -125,7 +124,7 @@
   
   # Calculate decomposition
   DecITtrend <- as.data.table(dat)[,
-                                   kitagawa_cfr4(Cases,ascfr,ITtrend$Cases, ITtrend$ascfr),
+                                   kitagawa_cfr(Cases,ascfr,ITtrend$Cases, ITtrend$ascfr),
                                    by=list(Country, Code, Date, Sex)]
   
   # Select only Italy
@@ -147,18 +146,19 @@
   
 ### Save results ##############################################################
   
-  # Output
-  library(writexl)
-  
+  # Table 2
   write_xlsx(x=DecSK,
              path="Output/Table2.xlsx")
   
+  # Table 3
   write_xlsx(x=DecITtrend,
              path="Output/Table3.xlsx")
   
+  # Appendix table 1
   write_xlsx(x=DecDE,
              path="Output/AppendixTab1.xlsx")
   
+  # Appendix table 2
   write_xlsx(x=DecIT,
              path="Output/AppendixTab2.xlsx")
   
