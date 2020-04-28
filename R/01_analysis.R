@@ -3,7 +3,7 @@
  
   ### File 2 of 2
 
-  ### Last updated: 2020-04-28 13:22:10 CEST
+  ### Last updated: 2020-04-28 15:16:10 CEST
 
   ### Contact:
   ### riffe@demogr.mpg.de
@@ -19,18 +19,10 @@
 ### Load and edit data ########################################################
 
   # Load CSV file
-  source <- "https://raw.githubusercontent.com/timriffe/covid_age/master/Data/"
-  dat <- read.csv(paste0(source,"Output_10.csv")
-                  ,sep=",",header=T,stringsAsFactors=F)
+  dat <- read.table("Data/inputdata.csv",header=T,stringsAsFactors=F)
   
   # Set Date as date
-  dat$Date <- as.Date(dat$Date,format="%d.%m.%Y")
-
-  # Restrict to countries of interest
-  countrylist <- c("Germany","Italy","China","SouthKorea","Spain","USA")
-  regionlist  <- c("All","NYC")
-  dat <- dat %>% filter(Country %in% countrylist) %>%
-                 filter(Region %in% regionlist)
+  dat$Date <- as.Date(dat$Date)
   
   # Remove Tests variable
   dat <- dat %>% mutate(Tests=NULL)
@@ -38,7 +30,7 @@
   # Drop if no cases/Deaths
   dat <- na.omit(dat)
   
-  # Latest date: April 22
+  # Latest date: April 22 (Wednesday)
   dat <- dat %>% filter(Date<="2020-04-22")
 
   
