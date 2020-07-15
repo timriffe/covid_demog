@@ -25,7 +25,7 @@
   dat <- read_csv(filename,skip=3)
 
   
-### Select countries ##########################################################
+### Edit data (select countries, etc.) ########################################
   
   # Lists of countries and regions
   countrylist <- c("China","Germany","Italy","South Korea","Spain","USA")
@@ -33,6 +33,12 @@
   
   # Restrict
   dat <- dat %>% filter(Country %in% countrylist & Region %in% region)
+  
+  # Remove Tests variable
+  dat <- dat %>% mutate(Tests=NULL)
+  
+  # Drop if no cases/Deaths
+  dat <- na.omit(dat)
   
   
 ### Save ######################################################################

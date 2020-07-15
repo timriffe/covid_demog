@@ -23,13 +23,7 @@
   
   # Set Date as date
   dat$Date <- as.Date(dat$Date,"%d.%m.%y")
-  
-  # Remove Tests variable
-  dat <- dat %>% mutate(Tests=NULL)
-  
-  # Drop if no cases/Deaths
-  dat <- na.omit(dat)
-  
+
   # Find max dates
   maxdates <- dat %>% 
     group_by(Country,Region) %>% 
@@ -41,6 +35,7 @@
     ungroup() %>% 
     summarize(min(maxdate))
   
+  # As vector
   maxdate <- as.data.frame(maxdate)[1,1]
 
 
