@@ -42,7 +42,8 @@
 ### Numbers for Table 1 #######################################################
   
   # Latest date: maxdate
-  dat2 <- dat %>% filter(Date<=maxdate)
+  refdate <- as.Date("30.06.2020","%d.%m.%Y")
+  dat2 <- dat  %>% filter(Date<=refdate) #maxdate
   
   # Aggregate case and death counts
   cases <- aggregate(Cases~Code+Date+Country+Region,data=dat2[dat2$Sex=="b",],sum) 
@@ -261,6 +262,6 @@
              path="Output/AppendixTab4.xlsx")
   
   # Appendix table 5
-  write_xlsx(x=DecEStrend,
+  write_xlsx(x=DecDEtrend,
              path="Output/AppendixTab5.xlsx")
   
