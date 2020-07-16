@@ -1,9 +1,7 @@
 ### Monitoring trends and differences in COVID-19 case fatality  ##############
 ### rates using decomposition methods: A demographic perspective ##############
   
-  ### File 4 of 4
-  
-  ### Last updated: 2020-07-14 14:06:06 CEST
+  ### Last updated: 2020-07-15 16:26:50 CEST
   
   ### Contact:
   ### riffe@demogr.mpg.de
@@ -18,13 +16,8 @@
 
 ### Load case data ############################################################
 
-  # URL + filename
-  url <- 'https://osf.io/5hyvs//?action=download'
-  filename <- 'Data/Output_10.csv'
-  
   # Load data
-  GET(url, write_disk(filename, overwrite = TRUE))
-  cases <- read_csv(filename,skip=3)
+  cases <- read_csv("Data/inputdata.csv")
   
   # Edit date
   cases$Date <- as.Date(cases$Date,"%d.%m.%y")
