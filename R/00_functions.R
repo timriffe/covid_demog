@@ -1,9 +1,7 @@
 ### Monitoring trends and differences in COVID-19 case fatality  ##############
 ### rates using decomposition methods: A demographic perspective ##############
 
-  ### File 1 of 2
-  
-  ### Last updated: 2020-04-28 13:33:20 CEST
+  ### Last updated: 2020-07-14 11:19:20 CEST
   
   ### Contact:
   ### riffe@demogr.mpg.de
@@ -16,6 +14,7 @@
   library(tidyverse)
   library(data.table)
   library(writexl)
+  library(httr)
 
 
 ### Case fatality rate #######################################################
