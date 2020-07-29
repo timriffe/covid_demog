@@ -75,7 +75,7 @@
   # dat$Exc[dat$Exc<0] <- 0
   
   #### constraining excess to be >0 (Enrique's version)
-  
+  ### shouldn't the excess cumulate over time within same age/sex? in that case group_by should be by country, Age, and Sex   
   dat <- dat %>% 
     mutate(exc_p = ifelse(excess < 0, 0, excess)) %>%
     group_by(Country,Age,Sex) %>% 
