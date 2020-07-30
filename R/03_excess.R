@@ -63,27 +63,24 @@
 
 ### Analysis similar to Table 2 ###############################################
   
-  # Generate cumulative deaths/predictions
-  dat <- dat %>% group_by(Country,Date,t) %>% 
-          mutate(cumdeath = cumsum(Deaths),
-                 cumpred = cumsum(pred))
-  
-  # Calculate excess deaths
-  dat$Exc <- dat$cumdeath - dat$cumpred
-  
-  # Set to 0 if below 0
-  dat$Exc[dat$Exc<0] <- 0
+  # Generate cumulative excess deaths
+  dat <- dat %>% 
+    mutate(exc_p = ifelse(excess < 0, 0, excess)) %>%
+    group_by(Country,Age,Sex) %>% 
+    mutate(Exc = cumsum(exc_p))
   
   # Calculate ASFRs
   dat <- dat %>% mutate(ascfr = Exc / Cases,
-                        ascfr = replace_na(ascfr, 0))
+                        ascfr = replace_na(ascfr, 0),
+                        ascfr = ifelse(is.infinite(ascfr),0,ascfr),
+                        ascfr = ifelse(ascfr>1,1,ascfr))
   
   # Decide some reference patterns (here Germany)
   DE <- dat %>% 
     filter(Country == "Germany",
            Sex == "b",
            #Date == maxdate)
-           Week == 21)
+           Week == 19)
 
   
   # Decompose
@@ -94,7 +91,7 @@
   
   # Select only most recent date, both genders combined
   #DecDE <- DecDE %>% filter(Sex=="b") %>% group_by(Country) %>% slice(which.max(Date))
-  DecDE <- DecDE %>% filter(Sex=="b") %>% group_by(Country) %>% filter(Week %in% 19:21)
+  DecDE <- DecDE %>% filter(Sex=="b") %>% group_by(Country) %>% filter(Week %in% 19)
 
   # Drop unnecessary variables
   DecDE <- DecDE %>% select(Country,Week,CFR2,Diff,AgeComp,RateComp)
