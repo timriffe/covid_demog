@@ -42,10 +42,9 @@
   dat$Date <- as.Date(dat$date,"%d.%m.%y")
 
   # Restrict
-  dat <- dat %>% filter(Country %in% countrylist)
-  
-  # Merge with cases
-  dat <- inner_join(dat,cases[,c("Country","Date","Age","Sex","Cases")])
+  # Restrict
+  dat <- dat %>% filter(Country %in% countrylist) %>% 
+    filter(Date >= "2020-02-24")
   
   # Find max dates
   maxdates <- dat %>% 
@@ -68,6 +67,26 @@
     mutate(exc_p = ifelse(excess < 0, 0, excess)) %>%
     group_by(Country,Age,Sex) %>% 
     mutate(Exc = cumsum(exc_p))
+  
+  # Edit age variable
+  dat <- dat %>% mutate(Age=recode(Age,
+                                   '5'=0,
+                                   '15'=10,
+                                   '25'=20,
+                                   '35'=30,
+                                   '45'=40,
+                                   '55'=50,
+                                   '65'=60,
+                                   '75'=70,
+                                   '85'=80,
+                                   '95'=90))
+  
+  # Aggregate
+  dat <- dat %>% group_by(Country,Sex,Date,Age,Week) %>% 
+    select(Exc) %>% summarize_all(sum)
+  
+  # Merge with cases
+  dat <- inner_join(dat,cases[,c("Country","Date","Age","Sex","Cases")])
   
   # Calculate ASFRs
   dat <- dat %>% mutate(ascfr = Exc / Cases,
