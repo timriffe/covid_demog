@@ -104,13 +104,12 @@
   tx <- 6
   lim_x <- 240000
 
-
 ### Plot ######################################################################
 
   db_gh2 %>% 
     ggplot(aes(Cases, Deaths, col = Country))+
     geom_line(size = 1, alpha = .9)+
-    scale_x_continuous(expand = c(0,0), breaks = seq(0, 300000, 50000), limits = c(0, lim_x + 20000), labels = comma)+
+    scale_x_continuous(expand = c(0,0), breaks = seq(0, 300000, 50000), limits = c(0, lim_x + 30000), labels = comma)+
     scale_y_continuous(expand = c(0,0), breaks = seq(0, 40000, 5000), limits = c(0, 40000), labels = comma)+
     annotate("segment", x = 0, y = 0, xend = lim_x, yend = lim_x * .02, colour = "grey40", size = .5, alpha = .3, linetype = 2)+
     annotate("segment", x = 0, y = 0, xend = lim_x, yend = lim_x * .05, colour = "grey40", size = .5, alpha = .3, linetype = 2)+
