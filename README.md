@@ -12,7 +12,7 @@ Cosmo Strozza, cosmo.strozza@uniroma1.it
 
 Mikko Myrskylä, myrskyla@demogr.mpg.de
 
-socarxiv: https://osf.io/preprints/socarxiv/j4a3d | medarxiv: https://www.medrxiv.org/content/10.1101/2020.03.31.20048397v1
+PLOS ONE: [https://doi.org/10.1371/journal.pone.0238904](https://doi.org/10.1371/journal.pone.0238904)
 
 # Summary
 
