@@ -12,7 +12,7 @@ Cosmo Strozza, cosmo.strozza@uniroma1.it
 
 Mikko Myrskylä, myrskyla@demogr.mpg.de
 
-socarxiv: https://osf.io/preprints/socarxiv/j4a3d | medarxiv: https://www.medrxiv.org/content/10.1101/2020.03.31.20048397v1
+Published as open access here: Dudel C, Riffe T, Acosta E, van Raalte A, Strozza C, Myrskylä M (2020) Monitoring trends and differences in COVID-19 case-fatality rates using decomposition methods: Contributions of age structure and age-specific fatality. PLoS ONE 15(9): e0238904. https://doi.org/10.1371/journal.pone.0238904
 
 # Summary
 
