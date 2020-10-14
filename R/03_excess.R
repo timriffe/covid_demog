@@ -45,20 +45,7 @@
   # Restrict
   dat <- dat %>% filter(Country %in% countrylist) %>% 
     filter(Date >= "2020-02-24")
-  
-  # Find max dates
-  maxdates <- dat %>% 
-    group_by(Country) %>% 
-    summarize(maxdate=max(Date))
-  
-  # Get least common denominator
-  maxdate <- maxdates %>% 
-    filter(Country!="China") %>% 
-    ungroup() %>% 
-    summarize(min(maxdate))
-  
-  maxdate <- as.data.frame(maxdate)[1,1]
-  
+
 
 ### Analysis similar to Table 2 ###############################################
   
@@ -66,7 +53,7 @@
   dat <- dat %>% 
     mutate(exc_p = ifelse(excess < 0, 0, excess)) %>%
     group_by(Country,Age,Sex) %>% 
-    mutate(Exc = cumsum(exc_p))
+    mutate(Exc = cumsum(exc_p)) %>% ungroup()
   
   # Edit age variable
   dat <- dat %>% mutate(Age=recode(Age,
@@ -85,9 +72,12 @@
   dat <- dat %>% group_by(Country,Sex,Date,Age,Week) %>% 
     select(Exc) %>% summarize_all(sum)
   
+  # Adjust date for US: case countrs from two days earlier than excess mortality
+  cases$Date[cases$Date=="2020-05-23" & cases$Country=="USA"] <- "2020-05-25"
+  
   # Merge with cases
   dat <- inner_join(dat,cases[,c("Country","Date","Age","Sex","Cases")])
-  
+
   # Calculate ASFRs
   dat <- dat %>% mutate(ascfr = Exc / Cases,
                         ascfr = replace_na(ascfr, 0),
@@ -105,12 +95,10 @@
   # Decompose
   DecDE <- as.data.table(dat)[,
                               kitagawa_cfr(DE$Cases, DE$ascfr,Cases,ascfr),
-                              #by=list(Country,Date, Sex)]#
                               by=list(Country,Week, Sex)]
   
   # Select only most recent date, both genders combined
-  #DecDE <- DecDE %>% filter(Sex=="b") %>% group_by(Country) %>% slice(which.max(Date))
-  DecDE <- DecDE %>% filter(Sex=="b") %>% group_by(Country) %>% filter(Week %in% 19)
+  DecDE <- DecDE %>% filter(Sex=="b") %>% group_by(Country) %>% filter(Week %in% 19:22)
 
   # Drop unnecessary variables
   DecDE <- DecDE %>% select(Country,Week,CFR2,Diff,AgeComp,RateComp)
