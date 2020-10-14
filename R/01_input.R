@@ -11,15 +11,23 @@
 
 ### Get data ##################################################################
 
-  # Required packages
+  # Required packages & functions
   source(("R/00_functions.R"))
 
-  # URL + filename
-  url <- 'https://osf.io/wu5ve//?action=download'
-  filename <- 'Data/Output_10.csv'
+  # URL + file name
+  url <- 'https://osf.io/43ucn//?action=download'
   
-  # Load data
+  # Where to save
+  filename <- 'Data/Output_10.zip'
+  
+  # Download data
   GET(url, write_disk(filename, overwrite = TRUE))
+  
+  # Unzip 
+  unzip(filename)
+  
+  # Load data 
+  filename <- 'Data/Output_10.csv'
   dat <- read_csv(filename,skip=3)
 
   
